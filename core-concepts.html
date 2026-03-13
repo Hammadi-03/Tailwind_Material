@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="id" class="dark">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Core Concepts Tailwind CSS - Utility-first CSS, responsive design, dark mode, dan states">
-  <title>Core Concepts | Belajar Tailwind CSS</title>
+    content="Core Concepts Tailwind CSS - Utility-first CSS, responsive design, dark mode, and states">
+  <title>Core Concepts</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -129,11 +129,11 @@
       <!-- Header -->
       <div class="mb-12">
         <div class="flex items-center gap-3 mb-4">
-          <span class="px-3 py-1 rounded-full bg-primary-500/20 text-primary-400 text-sm font-medium">Materi 2/10</span>
-          <span class="px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400 text-sm font-medium">Penting</span>
+          <span class="px-3 py-1 rounded-full bg-primary-500/20 text-primary-400 text-sm font-medium">Lesson 2/10</span>
+          <span class="px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400 text-sm font-medium">Important</span>
         </div>
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Core Concepts</h1>
-        <p class="text-xl text-gray-400">Memahami konsep utility-first, states, responsive design, dan dark mode di
+        <p class="text-xl text-gray-400">Understanding utility-first, states, responsive design, and dark mode in
           Tailwind CSS.</p>
       </div>
 
@@ -143,16 +143,16 @@
           <svg class="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
           </svg>
-          Daftar Isi
+          Table of Contents
         </h2>
         <ul class="space-y-2 text-gray-300">
           <li><a href="#utility-first" class="hover:text-primary-400 transition-colors">1. Utility-First CSS</a></li>
-          <li><a href="#states" class="hover:text-primary-400 transition-colors">2. Hover, Focus, dan States Lainnya</a>
+          <li><a href="#states" class="hover:text-primary-400 transition-colors">2. Hover, Focus, and Other States</a>
           </li>
           <li><a href="#responsive" class="hover:text-primary-400 transition-colors">3. Responsive Design</a></li>
           <li><a href="#dark-mode" class="hover:text-primary-400 transition-colors">4. Dark Mode</a></li>
-          <li><a href="#colors" class="hover:text-primary-400 transition-colors">5. Sistem Warna</a></li>
-          <li><a href="#custom-styles" class="hover:text-primary-400 transition-colors">6. Menambahkan Custom Styles</a>
+          <li><a href="#colors" class="hover:text-primary-400 transition-colors">5. Color System</a></li>
+          <li><a href="#custom-styles" class="hover:text-primary-400 transition-colors">6. Adding Custom Styles</a>
           </li>
           <li><a href="#challenge" class="hover:text-primary-400 transition-colors">🎯 Challenge</a></li>
         </ul>
@@ -170,39 +170,39 @@
 
           <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700/50 mb-6">
             <p class="text-lg mb-4">
-              <strong>Utility-first</strong> artinya kita membangun desain dengan menggabungkan class-class kecil yang
-              masing-masing melakukan satu hal spesifik.
+              <strong>Utility-first</strong> means building designs by combining small classes that
+              each do one specific thing.
             </p>
             <div class="p-4 rounded-lg bg-blue-500/10 border border-blue-500/30">
               <p class="text-blue-300 text-sm">
-                <strong>💡 Analogi:</strong> Seperti memasak dengan bumbu-bumbu terpisah. Garam, merica, bawang -
-                masing-masing punya tugas. Tailwind memberikan "bumbu" CSS yang bisa kamu kombinasikan sesukamu.
+                <strong>💡 Analogy:</strong> Like cooking with separate seasonings. Salt, pepper, garlic -
+                each has its job. Tailwind provides the CSS "seasonings" that you can combine as you like.
               </p>
             </div>
           </div>
 
-          <h3 class="text-xl font-semibold mb-4">Cara Membaca Class Tailwind</h3>
+          <h3 class="text-xl font-semibold mb-4">How to Read Tailwind Classes</h3>
 
           <div class="grid gap-4 mb-6">
             <div class="p-4 rounded-xl bg-gray-800/50 border border-gray-700/50">
               <code class="text-primary-400 text-lg">bg-blue-500</code>
-              <p class="text-gray-400 mt-2">→ background color blue dengan tingkat kegelapan 500</p>
+              <p class="text-gray-400 mt-2">→ background color blue with intensity level 500</p>
             </div>
             <div class="p-4 rounded-xl bg-gray-800/50 border border-gray-700/50">
               <code class="text-primary-400 text-lg">text-xl</code>
-              <p class="text-gray-400 mt-2">→ text size extra-large (1.25rem)</p>
+              <p class="text-gray-400 mt-2">→ extra-large text size (1.25rem)</p>
             </div>
             <div class="p-4 rounded-xl bg-gray-800/50 border border-gray-700/50">
               <code class="text-primary-400 text-lg">p-4</code>
-              <p class="text-gray-400 mt-2">→ padding 1rem (16px) di semua sisi</p>
+              <p class="text-gray-400 mt-2">→ 1rem (16px) padding on all sides</p>
             </div>
             <div class="p-4 rounded-xl bg-gray-800/50 border border-gray-700/50">
               <code class="text-primary-400 text-lg">rounded-lg</code>
-              <p class="text-gray-400 mt-2">→ border-radius large (0.5rem)</p>
+              <p class="text-gray-400 mt-2">→ large border-radius (0.5rem)</p>
             </div>
           </div>
 
-          <h3 class="text-xl font-semibold mb-4">Contoh Praktis</h3>
+          <h3 class="text-xl font-semibold mb-4">Practical Example</h3>
 
           <!-- Preview Box -->
           <div class="preview-box mb-6">
@@ -217,7 +217,7 @@
               Preview
             </div>
             <div class="preview-content">
-              <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium">Klik Saya</button>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium">Click Me</button>
             </div>
           </div>
 
@@ -228,8 +228,8 @@
             </div>
             <div class="code-content">
               <pre><span class="tag">&lt;button</span> <span class="attr">class</span>=<span class="string">"bg-blue-500 text-white px-4 py-2 rounded-lg font-medium"</span><span class="tag">&gt;</span>
-  Klik Saya
-<span class="tag">&lt;/button&gt;</span></pre>
+  Click Me
+&lt;/button&gt;</pre>
             </div>
           </div>
 
@@ -239,29 +239,29 @@
               <thead>
                 <tr>
                   <th>Class</th>
-                  <th>Fungsi</th>
+                  <th>Function</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><code>bg-blue-500</code></td>
-                  <td>Background warna biru</td>
+                  <td>Blue background color</td>
                 </tr>
                 <tr>
                   <td><code>text-white</code></td>
-                  <td>Teks warna putih</td>
+                  <td>White text color</td>
                 </tr>
                 <tr>
                   <td><code>px-4</code></td>
-                  <td>Padding horizontal 1rem (16px)</td>
+                  <td>1rem (16px) horizontal padding</td>
                 </tr>
                 <tr>
                   <td><code>py-2</code></td>
-                  <td>Padding vertical 0.5rem (8px)</td>
+                  <td>0.5rem (8px) vertical padding</td>
                 </tr>
                 <tr>
                   <td><code>rounded-lg</code></td>
-                  <td>Sudut membulat (border-radius: 0.5rem)</td>
+                  <td>Rounded corners (border-radius: 0.5rem)</td>
                 </tr>
                 <tr>
                   <td><code>font-medium</code></td>
@@ -275,7 +275,7 @@
           <div class="mt-4 playground">
             <div class="playground-header">
               <div class="playground-title">
-                <span class="icon">🎮</span> Coba Utility Classes
+                <span class="icon">🎮</span> Try Utility Classes
               </div>
               <div class="playground-actions">
                 <button class="playground-btn reset-btn">🔄 Reset</button>
@@ -285,19 +285,19 @@
             <div class="playground-body" style="min-height: 200px;">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false" style="min-height: 150px;"><!-- Coba ubah warna: bg-blue-500 → bg-green-500 atau bg-red-500 -->
+                <textarea class="playground-editor" spellcheck="false" style="min-height: 150px;"><!-- Try changing colors: bg-blue-500 → bg-green-500 or bg-red-500 -->
 <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium">
-  Button Biru
+  Blue Button
 </button>
 
-<!-- Coba ubah padding: px-4 py-2 → px-8 py-4 -->
+<!-- Try changing padding: px-4 py-2 → px-8 py-4 -->
 <button class="bg-purple-500 text-white px-4 py-2 rounded-lg font-medium mt-2 block">
-  Button Ungu
+  Purple Button
 </button>
 
-<!-- Coba ubah rounded-lg → rounded-full -->
+<!-- Try changing rounded-lg → rounded-full -->
 <button class="bg-green-500 text-white px-6 py-3 rounded-lg font-medium mt-2 block">
-  Button Hijau
+  Green Button
 </button></textarea>
               </div>
               <div class="playground-preview">
@@ -313,28 +313,28 @@
           <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
             <span
               class="w-10 h-10 rounded-xl bg-primary-500/20 text-primary-400 flex items-center justify-center">2</span>
-            Hover, Focus, dan States Lainnya
+            Hover, Focus, and Other States
           </h2>
 
-          <p class="text-gray-300 mb-6">Tailwind memungkinkan kita menambahkan style untuk berbagai state dengan mudah
-            menggunakan <strong>prefix</strong>.</p>
+          <p class="text-gray-300 mb-6">Tailwind allows us to add styles for various states easily
+            using <strong>prefixes</strong>.</p>
 
           <div class="grid md:grid-cols-2 gap-4 mb-6">
             <div class="p-4 rounded-xl bg-gray-800/50 border border-gray-700/50">
               <code class="text-green-400">hover:</code>
-              <p class="text-gray-400 text-sm mt-1">Ketika mouse di atas elemen</p>
+              <p class="text-gray-400 text-sm mt-1">When mouse is over the element</p>
             </div>
             <div class="p-4 rounded-xl bg-gray-800/50 border border-gray-700/50">
               <code class="text-green-400">focus:</code>
-              <p class="text-gray-400 text-sm mt-1">Ketika elemen difokuskan</p>
+              <p class="text-gray-400 text-sm mt-1">When the element is focused</p>
             </div>
             <div class="p-4 rounded-xl bg-gray-800/50 border border-gray-700/50">
               <code class="text-green-400">active:</code>
-              <p class="text-gray-400 text-sm mt-1">Ketika elemen diklik</p>
+              <p class="text-gray-400 text-sm mt-1">When the element is being clicked</p>
             </div>
             <div class="p-4 rounded-xl bg-gray-800/50 border border-gray-700/50">
               <code class="text-green-400">disabled:</code>
-              <p class="text-gray-400 text-sm mt-1">Ketika elemen disabled</p>
+              <p class="text-gray-400 text-sm mt-1">When the element is disabled</p>
             </div>
           </div>
 
@@ -348,12 +348,12 @@
                   d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
                 </path>
               </svg>
-              Preview (arahkan mouse ke button)
+              Preview (hover over the button)
             </div>
             <div class="preview-content">
               <button
                 class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-200">Hover
-                Saya</button>
+                Me</button>
             </div>
           </div>
 
@@ -366,14 +366,14 @@
               <pre><span class="tag">&lt;button</span> <span class="attr">class</span>=<span class="string">"bg-blue-500 hover:bg-blue-600 
   text-white px-4 py-2 rounded-lg
   transition-colors duration-200"</span><span class="tag">&gt;</span>
-  Hover Saya
-<span class="tag">&lt;/button&gt;</span></pre>
+  Hover Me
+&lt;/button&gt;</pre>
             </div>
           </div>
 
           <div class="info-box tip">
             <div class="info-box-title">💡 Tips</div>
-            <p>Gunakan <code>transition-colors</code> dan <code>duration-200</code> untuk membuat perubahan warna terasa
+            <p>Use <code>transition-colors</code> and <code>duration-200</code> to make color changes feel
               smooth.</p>
           </div>
 
@@ -381,7 +381,7 @@
           <div class="mt-4 playground">
             <div class="playground-header">
               <div class="playground-title">
-                <span class="icon">🎮</span> Coba Hover & States
+                <span class="icon">🎮</span> Try Hover & States
               </div>
               <div class="playground-actions">
                 <button class="playground-btn reset-btn">🔄 Reset</button>
@@ -391,17 +391,17 @@
             <div class="playground-body" style="min-height: 200px;">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false" style="min-height: 150px;"><!-- Hover button - arahkan mouse ke button -->
+                <textarea class="playground-editor" spellcheck="false" style="min-height: 150px;"><!-- Hover button - hover over the button -->
 <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-200">
   Hover Me!
 </button>
 
-<!-- Coba tambahkan hover:scale-110 -->
+<!-- Try adding hover:scale-110 -->
 <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-all duration-200 mt-2 block">
   Hover + Scale
 </button>
 
-<!-- Focus state - klik button lalu tekan Tab -->
+<!-- Focus state - click button then press Tab -->
 <button class="bg-purple-500 text-white px-4 py-2 rounded-lg focus:ring-2 focus:ring-purple-300 mt-2 block">
   Focus Ring
 </button></textarea>
@@ -422,8 +422,8 @@
             Responsive Design
           </h2>
 
-          <p class="text-gray-300 mb-6">Tailwind menggunakan pendekatan <strong>mobile-first</strong>. Class tanpa
-            prefix berlaku untuk semua ukuran, lalu kita tambahkan prefix untuk layar yang lebih besar.</p>
+          <p class="text-gray-300 mb-6">Tailwind uses a <strong>mobile-first</strong> approach. Classes without
+            prefixes apply to all sizes, then we add prefixes for larger screens.</p>
 
           <div class="overflow-x-auto mb-6">
             <table class="w-full text-sm">
@@ -484,25 +484,25 @@
               <thead>
                 <tr>
                   <th>Class</th>
-                  <th>Fungsi</th>
+                  <th>Function</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><code>grid-cols-1</code></td>
-                  <td>1 kolom (default di mobile)</td>
+                  <td>1 column (default on mobile)</td>
                 </tr>
                 <tr>
                   <td><code>md:grid-cols-2</code></td>
-                  <td>2 kolom di tablet (≥768px)</td>
+                  <td>2 columns on tablet (≥768px)</td>
                 </tr>
                 <tr>
                   <td><code>lg:grid-cols-3</code></td>
-                  <td>3 kolom di desktop (≥1024px)</td>
+                  <td>3 columns on desktop (≥1024px)</td>
                 </tr>
                 <tr>
                   <td><code>gap-4</code></td>
-                  <td>Jarak antar item 1rem</td>
+                  <td>1rem gap between items</td>
                 </tr>
               </tbody>
             </table>
@@ -512,7 +512,7 @@
           <div class="mt-4 playground">
             <div class="playground-header">
               <div class="playground-title">
-                <span class="icon">🎮</span> Coba Responsive
+                <span class="icon">🎮</span> Try Responsive
               </div>
               <div class="playground-actions">
                 <button class="playground-btn reset-btn">🔄 Reset</button>
@@ -522,17 +522,17 @@
             <div class="playground-body" style="min-height: 220px;">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false" style="min-height: 170px;"><!-- Resize preview untuk lihat perubahan layout -->
-<!-- Mobile: 1 kolom, Tablet (md): 2 kolom, Desktop (lg): 3 kolom -->
+                <textarea class="playground-editor" spellcheck="false" style="min-height: 170px;"><!-- Resize preview to see layout changes -->
+<!-- Mobile: 1 column, Tablet (md): 2 columns, Desktop (lg): 3 columns -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
   <div class="p-4 bg-blue-500 rounded-lg text-center">Item 1</div>
   <div class="p-4 bg-green-500 rounded-lg text-center">Item 2</div>
   <div class="p-4 bg-purple-500 rounded-lg text-center">Item 3</div>
 </div>
 
-<!-- Teks yang berubah size berdasarkan layar -->
+<!-- Text that changes size based on screen -->
 <p class="mt-4 text-sm md:text-lg lg:text-2xl text-center bg-gray-700 p-4 rounded-lg">
-  Teks ini berubah ukuran: text-sm → md:text-lg → lg:text-2xl
+  This text changes size: text-sm → md:text-lg → lg:text-2xl
 </p></textarea>
               </div>
               <div class="playground-preview">
@@ -562,16 +562,16 @@
             <div class="code-content">
               <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"bg-white dark:bg-gray-800 
   text-gray-900 dark:text-white p-6"</span><span class="tag">&gt;</span>
-  Konten yang berubah warna di dark mode
-<span class="tag">&lt;/div&gt;</span></pre>
+  Content that changes color in dark mode
+&lt;/div&gt;</pre>
             </div>
           </div>
 
           <div class="p-4 rounded-lg bg-yellow-500/10 border border-yellow-500/30 mb-6">
             <p class="text-yellow-300 text-sm">
-              <strong>⚙️ Setup:</strong> Untuk mengaktifkan dark mode berbasis class, tambahkan <code
-                class="px-1 rounded bg-gray-800">darkMode: 'class'</code> di konfigurasi Tailwind, lalu tambahkan class
-              <code class="px-1 rounded bg-gray-800">dark</code> ke elemen &lt;html&gt;.
+              <strong>⚙️ Setup:</strong> To enable class-based dark mode, add <code
+                class="px-1 rounded bg-gray-800">darkMode: 'class'</code> in your Tailwind config, then add the
+              <code class="px-1 rounded bg-gray-800">dark</code> class to the &lt;html&gt; element.
             </p>
           </div>
 
@@ -579,7 +579,7 @@
           <div class="mt-4 playground">
             <div class="playground-header">
               <div class="playground-title">
-                <span class="icon">🎮</span> Coba Dark Mode
+                <span class="icon">🎮</span> Try Dark Mode
               </div>
               <div class="playground-actions">
                 <button class="playground-btn reset-btn">🔄 Reset</button>
@@ -589,12 +589,12 @@
             <div class="playground-body" style="min-height: 200px;">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false" style="min-height: 150px;"><!-- Preview sudah dalam dark mode -->
-<!-- Card dengan warna berbeda untuk light/dark -->
+                <textarea class="playground-editor" spellcheck="false" style="min-height: 150px;"><!-- Preview is already in dark mode -->
+<!-- Card with different colors for light/dark -->
 <div class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white p-6 rounded-lg">
   <h3 class="text-lg font-bold">Dark Mode Card</h3>
   <p class="text-gray-600 dark:text-gray-300 mt-2">
-    Teks ini berubah warna di dark mode
+    This text changes color in dark mode
   </p>
   <button class="mt-4 bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-lg">
     Button
@@ -614,14 +614,14 @@
           <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
             <span
               class="w-10 h-10 rounded-xl bg-primary-500/20 text-primary-400 flex items-center justify-center">5</span>
-            Sistem Warna
+            Color System
           </h2>
 
-          <p class="text-gray-300 mb-6">Tailwind menyediakan palette warna lengkap dengan 11 tingkat kegelapan (50-950).
+          <p class="text-gray-300 mb-6">Tailwind provides a complete color palette with 11 shade levels (50-950).
           </p>
 
           <div class="mb-6">
-            <h3 class="text-lg font-semibold mb-4">Contoh Palette Blue:</h3>
+            <h3 class="text-lg font-semibold mb-4">Blue Palette Example:</h3>
             <div class="flex flex-wrap gap-2">
               <div class="w-16 h-16 rounded-lg bg-blue-50 flex items-center justify-center text-xs text-gray-800">50
               </div>
@@ -652,11 +652,11 @@
           <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
             <span
               class="w-10 h-10 rounded-xl bg-primary-500/20 text-primary-400 flex items-center justify-center">6</span>
-            Menambahkan Custom Styles
+            Adding Custom Styles
           </h2>
 
-          <p class="text-gray-300 mb-6">Ketika class bawaan tidak cukup, kamu bisa menggunakan <strong>arbitrary
-              values</strong> dengan tanda kurung siku.</p>
+          <p class="text-gray-300 mb-6">When built-in classes aren't enough, you can use <strong>arbitrary
+              values</strong> with square brackets.</p>
 
           <div class="code-block">
             <div class="code-header">
@@ -676,23 +676,23 @@
           </div>
 
           <div class="info-box warning">
-            <div class="info-box-title">⚠️ Catatan</div>
-            <p>Gunakan arbitrary values hanya jika class standar Tailwind tidak cukup. Terlalu banyak arbitrary values
-              bisa membuat kode sulit dipelihara.</p>
+            <div class="info-box-title">⚠️ Note</div>
+            <p>Use arbitrary values only if standard Tailwind classes are not enough. Too many arbitrary values
+              can make code hard to maintain.</p>
           </div>
         </section>
 
         <!-- Common Mistakes -->
         <section class="mb-16 p-6 rounded-xl bg-red-500/10 border border-red-500/30">
-          <h2 class="text-xl font-bold text-red-400 mb-4">⚠️ Kesalahan Umum Pemula</h2>
+          <h2 class="text-xl font-bold text-red-400 mb-4">⚠️ Common Beginner Mistakes</h2>
           <ul class="space-y-3 text-gray-300">
-            <li class="flex items-start gap-2"><span class="text-red-400">•</span><span><strong>Lupa
-                  mobile-first:</strong> Class tanpa prefix berlaku untuk SEMUA ukuran layar</span></li>
-            <li class="flex items-start gap-2"><span class="text-red-400">•</span><span><strong>Prefix order
-                  salah:</strong> Tulis <code class="px-1 rounded bg-gray-800">hover:bg-blue-600</code> bukan <code
+            <li class="flex items-start gap-2"><span class="text-red-400">•</span><span><strong>Forgot
+                  mobile-first:</strong> Classes without prefixes apply to ALL screen sizes</span></li>
+            <li class="flex items-start gap-2"><span class="text-red-400">•</span><span><strong>Wrong prefix
+                  order:</strong> Write <code class="px-1 rounded bg-gray-800">hover:bg-blue-600</code> not <code
                   class="px-1 rounded bg-gray-800">bg-blue-600:hover</code></span></li>
-            <li class="flex items-start gap-2"><span class="text-red-400">•</span><span><strong>Terlalu banyak arbitrary
-                  values:</strong> Gunakan hanya jika benar-benar perlu</span></li>
+            <li class="flex items-start gap-2"><span class="text-red-400">•</span><span><strong>Too many arbitrary
+                  values:</strong> Use only when absolutely necessary</span></li>
           </ul>
         </section>
 
@@ -703,8 +703,8 @@
         <label class="flex items-center gap-4 cursor-pointer">
           <input type="checkbox" id="reading-checkbox" class="reading-checkbox">
           <div>
-            <span class="font-semibold">Saya sudah membaca dan memahami materi ini</span>
-            <p class="text-sm text-gray-400 mt-1">Centang jika kamu sudah selesai membaca semua materi di atas</p>
+            <span class="font-semibold">I have read and understood this material</span>
+            <p class="text-sm text-gray-400 mt-1">Check this if you have finished reading all the material above</p>
           </div>
         </label>
       </div>
@@ -713,33 +713,33 @@
       <section id="challenge" class="challenge-section p-8 mb-12">
         <div class="flex items-center gap-3 mb-6">
           <span class="text-3xl">🎯</span>
-          <h2 class="text-2xl font-bold">Challenge: Card Produk Responsive</h2>
+          <h2 class="text-2xl font-bold">Challenge: Responsive Product Card</h2>
         </div>
 
         <div class="mb-6">
-          <p class="text-gray-300 mb-4"><strong>Tugas:</strong> Buat card produk dengan ketentuan:</p>
+          <p class="text-gray-300 mb-4"><strong>Task:</strong> Create a product card with these requirements:</p>
           <ul class="list-disc list-inside text-gray-400 space-y-2 ml-4">
-            <li>Tampilkan gambar produk (boleh placeholder)</li>
-            <li>Nama produk dan harga</li>
-            <li>Tombol "Beli" dengan efek hover</li>
-            <li>Card berubah layout di mobile vs desktop (responsive)</li>
-            <li>Mendukung dark mode (background dan text berubah)</li>
+            <li>Display a product image (can be a placeholder)</li>
+            <li>Product name and price</li>
+            <li>"Buy" button with hover effect</li>
+            <li>Card layout changes on mobile vs desktop (responsive)</li>
+            <li>Supports dark mode (background and text change)</li>
           </ul>
         </div>
 
         <div class="p-4 rounded-lg bg-gray-800/50 mb-6">
           <h3 class="font-semibold mb-3">💡 Tips:</h3>
           <ul class="text-sm text-gray-400 space-y-1">
-            <li>• Gunakan <code class="px-1 rounded bg-gray-700">flex</code> atau <code
-                class="px-1 rounded bg-gray-700">grid</code> untuk layout</li>
-            <li>• Pakai prefix <code class="px-1 rounded bg-gray-700">md:</code> untuk responsive</li>
-            <li>• Pakai prefix <code class="px-1 rounded bg-gray-700">dark:</code> untuk dark mode styling</li>
+            <li>• Use <code class="px-1 rounded bg-gray-700">flex</code> or <code
+                class="px-1 rounded bg-gray-700">grid</code> for layout</li>
+            <li>• Use <code class="px-1 rounded bg-gray-700">md:</code> prefix for responsive</li>
+            <li>• Use <code class="px-1 rounded bg-gray-700">dark:</code> prefix for dark mode styling</li>
           </ul>
         </div>
 
         <button id="submit-challenge"
           class="w-full py-4 rounded-xl bg-gradient-to-r from-green-500 to-emerald-500 text-white font-semibold hover:opacity-90 transition-opacity">
-          ✅ Saya Sudah Menyelesaikan Challenge Ini
+          ✅ I Have Completed This Challenge
         </button>
       </section>
 
@@ -754,7 +754,7 @@
         </a>
         <a id="next-lesson" href="layout.html"
           class="flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-primary-500 to-purple-600 text-white font-medium opacity-50 cursor-not-allowed pointer-events-none transition-all">
-          Lanjut: Layout
+          Next: Layout
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>

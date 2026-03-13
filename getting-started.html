@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="id" class="dark">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Getting Started dengan Tailwind CSS - Pelajari dasar-dasar Tailwind CSS dari instalasi hingga penggunaan pertama">
-  <title>Getting Started | Belajar Tailwind CSS</title>
+    content="Getting Started with Tailwind CSS - Learn the basics of Tailwind CSS from installation to first use">
+  <title>Getting Started</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -189,11 +189,11 @@
       <!-- Header -->
       <div class="mb-12">
         <div class="flex items-center gap-3 mb-4">
-          <span class="px-3 py-1 rounded-full bg-primary-500/20 text-primary-400 text-sm font-medium">Materi 1/10</span>
-          <span class="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-sm font-medium">Pemula</span>
+          <span class="px-3 py-1 rounded-full bg-primary-500/20 text-primary-400 text-sm font-medium">Lesson 1/10</span>
+          <span class="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-sm font-medium">Beginner</span>
         </div>
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Getting Started</h1>
-        <p class="text-xl text-gray-400">Pengenalan Tailwind CSS dan cara memulai menggunakannya dari nol.</p>
+        <p class="text-xl text-gray-400">Introduction to Tailwind CSS and how to start using it from scratch.</p>
       </div>
 
       <!-- Table of Contents -->
@@ -202,15 +202,13 @@
           <svg class="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
           </svg>
-          Daftar Isi
+          Table of Contents
         </h2>
         <ul class="space-y-2 text-gray-300">
-          <li><a href="#apa-itu-tailwind" class="hover:text-primary-400 transition-colors">1. Apa itu Tailwind CSS?</a>
+          <li><a href="#apa-itu-tailwind" class="hover:text-primary-400 transition-colors">1. What is Tailwind CSS?</a>
           </li>
-          <li><a href="#kelebihan-kekurangan" class="hover:text-primary-400 transition-colors">2. Kelebihan &
-              Kekurangan</a></li>
-          <li><a href="#kapan-menggunakan" class="hover:text-primary-400 transition-colors">3. Kapan Cocok Menggunakan
-              Tailwind?</a></li>
+          <li><a href="#kelebihan-kekurangan" class="hover:text-primary-400 transition-colors">2. Pros & Cons</a></li>
+          <li><a href="#kapan-menggunakan" class="hover:text-primary-400 transition-colors">3. When to use Tailwind?</a></li>
           <li><a href="#installation" class="hover:text-primary-400 transition-colors">4. Installation</a></li>
           <li><a href="#editor-setup" class="hover:text-primary-400 transition-colors">5. Editor Setup</a></li>
           <li><a href="#challenge" class="hover:text-primary-400 transition-colors">🎯 Challenge</a></li>
@@ -225,29 +223,29 @@
           <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
             <span
               class="w-10 h-10 rounded-xl bg-primary-500/20 text-primary-400 flex items-center justify-center">1</span>
-            Apa itu Tailwind CSS?
+            What is Tailwind CSS?
           </h2>
 
           <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700/50 mb-6">
             <p class="text-lg mb-4">
-              <strong>Tailwind CSS</strong> adalah framework CSS yang menggunakan pendekatan <em>utility-first</em>.
-              Artinya, kamu membangun desain langsung di HTML menggunakan class-class kecil yang sudah tersedia.
+              <strong>Tailwind CSS</strong> is a CSS framework that uses a <em>utility-first</em> approach.
+              This means you build your designs directly in HTML using pre-defined small classes.
             </p>
 
             <div class="p-4 rounded-lg bg-blue-500/10 border border-blue-500/30">
               <p class="text-blue-300 text-sm">
-                <strong>💡 Analogi:</strong> Bayangkan kamu punya kotak LEGO dengan banyak potongan kecil.
-                Tailwind CSS seperti LEGO - kamu menggabungkan class-class kecil untuk membuat desain yang besar.
+                <strong>💡 Analogy:</strong> Imagine you have a LEGO box with many small pieces.
+                Tailwind CSS is like LEGO - you combine small classes to create large designs.
               </p>
             </div>
           </div>
 
-          <h3 class="text-xl font-semibold mb-4">Perbandingan: CSS Tradisional vs Tailwind</h3>
+          <h3 class="text-xl font-semibold mb-4">Comparison: Traditional CSS vs Tailwind</h3>
 
           <div class="grid md:grid-cols-2 gap-4 mb-6">
             <!-- Traditional CSS -->
             <div class="rounded-xl overflow-hidden">
-              <div class="px-4 py-2 bg-red-500/20 text-red-400 font-medium text-sm">CSS Tradisional ❌</div>
+              <div class="px-4 py-2 bg-red-500/20 text-red-400 font-medium text-sm">Traditional CSS ❌</div>
               <pre class="code-block p-4 text-sm overflow-x-auto"><code class="text-gray-300">/* styles.css */
 .btn-primary {
   background-color: #3B82F6;
@@ -265,14 +263,14 @@
             <!-- Tailwind -->
             <div class="rounded-xl overflow-hidden">
               <div class="px-4 py-2 bg-green-500/20 text-green-400 font-medium text-sm">Tailwind CSS ✅</div>
-              <pre class="code-block p-4 text-sm overflow-x-auto"><code class="text-gray-300">&lt;!-- Langsung di HTML --&gt;
+              <pre class="code-block p-4 text-sm overflow-x-auto"><code class="text-gray-300">&lt;!-- Directly in HTML --&gt;
 &lt;button class="bg-blue-500 
   text-white 
   px-4 py-2 
   rounded-lg 
   font-semibold 
   hover:bg-blue-600"&gt;
-  Klik Saya
+  Click Me
 &lt;/button&gt;</code></pre>
             </div>
           </div>
@@ -283,13 +281,13 @@
           <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
             <span
               class="w-10 h-10 rounded-xl bg-primary-500/20 text-primary-400 flex items-center justify-center">2</span>
-            Kelebihan & Kekurangan
+            Pros & Cons
           </h2>
 
           <div class="grid md:grid-cols-2 gap-6">
-            <!-- Kelebihan -->
+            <!-- Pros -->
             <div class="p-6 rounded-xl bg-green-500/10 border border-green-500/30">
-              <h3 class="text-lg font-semibold text-green-400 mb-4">✅ Kelebihan</h3>
+              <h3 class="text-lg font-semibold text-green-400 mb-4">✅ Pros</h3>
               <ul class="space-y-3 text-gray-300">
                 <li class="flex items-start gap-2">
                   <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
@@ -297,7 +295,7 @@
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                       clip-rule="evenodd" />
                   </svg>
-                  <span><strong>Cepat:</strong> Tidak perlu berpindah-pindah file CSS</span>
+                  <span><strong>Fast:</strong> No need to context-switch between CSS files</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
@@ -305,7 +303,7 @@
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                       clip-rule="evenodd" />
                   </svg>
-                  <span><strong>Konsisten:</strong> Design system bawaan yang rapi</span>
+                  <span><strong>Consistent:</strong> Built-in clean design system</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
@@ -313,7 +311,7 @@
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                       clip-rule="evenodd" />
                   </svg>
-                  <span><strong>Responsive:</strong> Mudah membuat layout responsive</span>
+                  <span><strong>Responsive:</strong> Easy to create responsive layouts</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
@@ -321,14 +319,14 @@
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                       clip-rule="evenodd" />
                   </svg>
-                  <span><strong>File kecil:</strong> Production build sangat optimal</span>
+                  <span><strong>Small files:</strong> Production builds are highly optimized</span>
                 </li>
               </ul>
             </div>
 
-            <!-- Kekurangan -->
+            <!-- Cons -->
             <div class="p-6 rounded-xl bg-red-500/10 border border-red-500/30">
-              <h3 class="text-lg font-semibold text-red-400 mb-4">❌ Kekurangan</h3>
+              <h3 class="text-lg font-semibold text-red-400 mb-4">❌ Cons</h3>
               <ul class="space-y-3 text-gray-300">
                 <li class="flex items-start gap-2">
                   <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
@@ -336,7 +334,7 @@
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
                       clip-rule="evenodd" />
                   </svg>
-                  <span><strong>HTML panjang:</strong> Banyak class di elemen</span>
+                  <span><strong>Verbose HTML:</strong> Many classes on elements</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
@@ -344,7 +342,7 @@
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
                       clip-rule="evenodd" />
                   </svg>
-                  <span><strong>Learning curve:</strong> Perlu hafal class-class</span>
+                  <span><strong>Learning curve:</strong> Need to memorize class names</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
@@ -352,7 +350,7 @@
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
                       clip-rule="evenodd" />
                   </svg>
-                  <span><strong>Setup:</strong> Butuh build process untuk production</span>
+                  <span><strong>Setup:</strong> Requires a build process for production</span>
                 </li>
               </ul>
             </div>
@@ -364,23 +362,23 @@
           <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
             <span
               class="w-10 h-10 rounded-xl bg-primary-500/20 text-primary-400 flex items-center justify-center">3</span>
-            Kapan Cocok Menggunakan Tailwind?
+            When to use Tailwind?
           </h2>
 
           <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700/50">
-            <h3 class="font-semibold text-green-400 mb-3">✅ Cocok untuk:</h3>
+            <h3 class="font-semibold text-green-400 mb-3">✅ Good for:</h3>
             <ul class="list-disc list-inside text-gray-300 mb-6 space-y-2">
-              <li>Proyek baru yang butuh development cepat</li>
-              <li>Aplikasi dengan komponen yang sering dipakai ulang</li>
-              <li>Tim yang ingin design system konsisten</li>
-              <li>Prototype dan MVP</li>
+              <li>New projects that need fast development</li>
+              <li>Applications with highly reusable components</li>
+              <li>Teams that want a consistent design system</li>
+              <li>Prototypes and MVPs</li>
             </ul>
 
-            <h3 class="font-semibold text-red-400 mb-3">❌ Mungkin kurang cocok untuk:</h3>
+            <h3 class="font-semibold text-red-400 mb-3">❌ Might not be suitable for:</h3>
             <ul class="list-disc list-inside text-gray-300 space-y-2">
-              <li>Proyek yang sudah punya CSS besar dan established</li>
-              <li>Tim yang tidak familiar dengan utility-first approach</li>
-              <li>Proyek sangat kecil (satu halaman statis)</li>
+              <li>Projects with a large established CSS codebase</li>
+              <li>Teams unfamiliar with the utility-first approach</li>
+              <li>Very small projects (single static page)</li>
             </ul>
           </div>
         </section>
@@ -393,18 +391,17 @@
             Installation
           </h2>
 
-          <p class="text-gray-300 mb-6">Ada beberapa cara menginstall Tailwind CSS. Untuk belajar, kita pakai cara
-            paling mudah: <strong>CDN</strong>.</p>
+          <p class="text-gray-300 mb-6">There are several ways to install Tailwind CSS. For learning, we'll use the easiest way: <strong>CDN</strong>.</p>
 
           <!-- CDN Method -->
           <div class="mb-8">
             <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
               <span class="px-2 py-1 rounded bg-green-500/20 text-green-400 text-xs">RECOMMENDED</span>
-              Cara 1: Menggunakan CDN (Paling Mudah)
+              Method 1: Using CDN (Easiest)
             </h3>
 
-            <p class="text-gray-400 mb-4">Tambahkan script ini di dalam tag <code
-                class="px-1.5 py-0.5 rounded bg-gray-800 text-primary-400">&lt;head&gt;</code>:</p>
+            <p class="text-gray-400 mb-4">Add this script inside the <code
+                class="px-1.5 py-0.5 rounded bg-gray-800 text-primary-400">&lt;head&gt;</code> tag:</p>
 
             <div class="code-block">
               <div class="code-header">
@@ -417,14 +414,14 @@
             </div>
 
             <div class="info-box warning">
-              <div class="info-box-title">⚠️ Catatan</div>
-              <p>CDN cocok untuk belajar dan prototyping. Untuk production, gunakan build process dengan npm/yarn.</p>
+              <div class="info-box-title">⚠️ Note</div>
+              <p>CDN is suitable for learning and prototyping. For production, use a build process with npm/yarn.</p>
             </div>
           </div>
 
           <!-- Full Example -->
           <div class="mb-8">
-            <h3 class="text-lg font-semibold mb-4">📄 Contoh File HTML Lengkap</h3>
+            <h3 class="text-lg font-semibold mb-4">📄 Full HTML File Example</h3>
 
             <div class="code-block">
               <div class="code-header">
@@ -433,11 +430,11 @@
               </div>
               <div class="code-content">
                 <pre><span class="tag">&lt;!DOCTYPE html&gt;</span>
-<span class="tag">&lt;html</span> <span class="attr">lang</span>=<span class="string">"id"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;html</span> <span class="attr">lang</span>=<span class="string">"en"</span><span class="tag">&gt;</span>
 <span class="tag">&lt;head&gt;</span>
   <span class="tag">&lt;meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span><span class="tag">&gt;</span>
   <span class="tag">&lt;meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span>
-  <span class="tag">&lt;title&gt;</span>Belajar Tailwind CSS<span class="tag">&lt;/title&gt;</span>
+  <span class="tag">&lt;title&gt;</span>Learn Tailwind CSS<span class="tag">&lt;/title&gt;</span>
   <span class="tag">&lt;script</span> <span class="attr">src</span>=<span class="string">"https://cdn.tailwindcss.com"</span><span class="tag">&gt;&lt;/script&gt;</span>
 <span class="tag">&lt;/head&gt;</span>
 <span class="tag">&lt;body</span> <span class="attr">class</span>=<span class="string">"bg-gray-100 min-h-screen"</span><span class="tag">&gt;</span>
@@ -446,10 +443,10 @@
       Hello Tailwind! 👋
     <span class="tag">&lt;/h1&gt;</span>
     <span class="tag">&lt;p</span> <span class="attr">class</span>=<span class="string">"mt-4 text-gray-600"</span><span class="tag">&gt;</span>
-      Ini adalah halaman pertama saya dengan Tailwind CSS.
+      This is my first page with Tailwind CSS.
     <span class="tag">&lt;/p&gt;</span>
     <span class="tag">&lt;button</span> <span class="attr">class</span>=<span class="string">"mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600"</span><span class="tag">&gt;</span>
-      Klik Saya
+      Click Me
     <span class="tag">&lt;/button&gt;</span>
   <span class="tag">&lt;/div&gt;</span>
 <span class="tag">&lt;/body&gt;</span>
@@ -458,19 +455,19 @@
             </div>
 
             <!-- Penjelasan Class -->
-            <h4 class="font-semibold mt-6 mb-3">📋 Penjelasan Class yang Digunakan:</h4>
+            <h4 class="font-semibold mt-6 mb-3">📋 Class Explanations:</h4>
             <div class="table-wrapper">
               <table>
                 <thead>
                   <tr>
                     <th>Class</th>
-                    <th>Fungsi</th>
+                    <th>Function</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td><code>bg-gray-100</code></td>
-                    <td>Background warna abu-abu terang</td>
+                    <td>Light gray background</td>
                   </tr>
                   <tr>
                     <td><code>min-h-screen</code></td>
@@ -478,19 +475,19 @@
                   </tr>
                   <tr>
                     <td><code>container mx-auto</code></td>
-                    <td>Container centered dengan max-width</td>
+                    <td>Centered container with max-width</td>
                   </tr>
                   <tr>
                     <td><code>p-8</code></td>
-                    <td>Padding 2rem (32px) semua sisi</td>
+                    <td>Padding 2rem (32px) on all sides</td>
                   </tr>
                   <tr>
                     <td><code>text-4xl font-bold</code></td>
-                    <td>Teks besar (2.25rem) dan tebal</td>
+                    <td>Large text (2.25rem) and bold</td>
                   </tr>
                   <tr>
                     <td><code>text-blue-600</code></td>
-                    <td>Warna teks biru</td>
+                    <td>Blue text color</td>
                   </tr>
                   <tr>
                     <td><code>mt-4</code></td>
@@ -498,7 +495,7 @@
                   </tr>
                   <tr>
                     <td><code>hover:bg-blue-600</code></td>
-                    <td>Background biru lebih gelap saat hover</td>
+                    <td>Darker blue background on hover</td>
                   </tr>
                 </tbody>
               </table>
@@ -506,8 +503,8 @@
 
             <div class="info-box tip">
               <div class="info-box-title">💡 Tips</div>
-              <p>Coba ubah nilai class seperti <code>text-4xl</code> menjadi <code>text-6xl</code> atau
-                <code>bg-blue-500</code> menjadi <code>bg-green-500</code> untuk melihat perubahannya!
+              <p>Try changing class values like <code>text-4xl</code> to <code>text-6xl</code> or
+                <code>bg-blue-500</code> to <code>bg-green-500</code> to see the changes!
               </p>
             </div>
           </div>
@@ -521,7 +518,7 @@
             Editor Setup
           </h2>
 
-          <p class="text-gray-300 mb-6">Untuk pengalaman coding yang lebih baik, install extension berikut di VS Code:
+          <p class="text-gray-300 mb-6">For a better coding experience, install these extensions in VS Code:
           </p>
 
           <div class="grid md:grid-cols-2 gap-4">
@@ -535,7 +532,7 @@
                 </div>
                 <div>
                   <h3 class="font-semibold">Tailwind CSS IntelliSense</h3>
-                  <p class="text-sm text-gray-400">Autocomplete untuk class Tailwind</p>
+                  <p class="text-sm text-gray-400">Autocomplete for Tailwind classes</p>
                 </div>
               </div>
             </div>
@@ -550,7 +547,7 @@
                 </div>
                 <div>
                   <h3 class="font-semibold">Prettier</h3>
-                  <p class="text-sm text-gray-400">Format kode otomatis</p>
+                  <p class="text-sm text-gray-400">Automatic code formatting</p>
                 </div>
               </div>
             </div>
@@ -559,20 +556,20 @@
 
         <!-- Common Mistakes -->
         <section class="mb-16 p-6 rounded-xl bg-red-500/10 border border-red-500/30">
-          <h2 class="text-xl font-bold text-red-400 mb-4">⚠️ Kesalahan Umum Pemula</h2>
+          <h2 class="text-xl font-bold text-red-400 mb-4">⚠️ Common Beginner Mistakes</h2>
           <ul class="space-y-3 text-gray-300">
             <li class="flex items-start gap-2">
               <span class="text-red-400">•</span>
-              <span><strong>Lupa tambahkan CDN script</strong> - Pastikan script ada di <code
+              <span><strong>Forgot to add CDN script</strong> - Make sure the script is in <code
                   class="px-1 py-0.5 rounded bg-gray-800">&lt;head&gt;</code></span>
             </li>
             <li class="flex items-start gap-2">
               <span class="text-red-400">•</span>
-              <span><strong>Typo di class name</strong> - Gunakan extension IntelliSense untuk autocomplete</span>
+              <span><strong>Typo in class name</strong> - Use the IntelliSense extension for autocomplete</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="text-red-400">•</span>
-              <span><strong>Tidak pakai viewport meta</strong> - Wajib untuk responsive design!</span>
+              <span><strong>No viewport meta tag</strong> - Mandatory for responsive design!</span>
             </li>
           </ul>
         </section>
@@ -584,8 +581,8 @@
         <label class="flex items-center gap-4 cursor-pointer">
           <input type="checkbox" id="reading-checkbox" class="reading-checkbox">
           <div>
-            <span class="font-semibold">Saya sudah membaca dan memahami materi ini</span>
-            <p class="text-sm text-gray-400 mt-1">Centang jika kamu sudah selesai membaca semua materi di atas</p>
+            <span class="font-semibold">I have read and understood this material</span>
+            <p class="text-sm text-gray-400 mt-1">Check this if you have finished reading all the material above</p>
           </div>
         </label>
       </div>
@@ -594,36 +591,36 @@
       <section id="challenge" class="challenge-section p-8 mb-12">
         <div class="flex items-center gap-3 mb-6">
           <span class="text-3xl">🎯</span>
-          <h2 class="text-2xl font-bold">Challenge: Halaman Pertamamu</h2>
+          <h2 class="text-2xl font-bold">Challenge: Your First Page</h2>
         </div>
 
         <div class="mb-6">
           <p class="text-gray-300 mb-4">
-            <strong>Tugas:</strong> Buat halaman HTML sederhana menggunakan Tailwind CDN dengan ketentuan:
+            <strong>Task:</strong> Create a simple HTML page using Tailwind CDN with these requirements:
           </p>
           <ul class="list-disc list-inside text-gray-400 space-y-2 ml-4">
-            <li>Heading besar dengan warna gradient atau bold</li>
-            <li>Paragraf deskripsi</li>
-            <li>Minimal satu button dengan efek hover</li>
-            <li>Background berwarna</li>
+            <li>Large heading with a gradient or bold color</li>
+            <li>Description paragraph</li>
+            <li>At least one button with a hover effect</li>
+            <li>Colored background</li>
           </ul>
         </div>
 
         <div class="p-4 rounded-lg bg-gray-800/50 mb-6">
           <h3 class="font-semibold mb-3">💡 Tips:</h3>
           <ul class="text-sm text-gray-400 space-y-1">
-            <li>• Coba class seperti <code class="px-1 rounded bg-gray-700">bg-blue-500</code>, <code
+            <li>• Try classes like <code class="px-1 rounded bg-gray-700">bg-blue-500</code>, <code
                 class="px-1 rounded bg-gray-700">text-white</code>, <code class="px-1 rounded bg-gray-700">p-4</code>
             </li>
-            <li>• Untuk hover, tambahkan prefix <code class="px-1 rounded bg-gray-700">hover:</code> contoh: <code
+            <li>• For hover, add the prefix <code class="px-1 rounded bg-gray-700">hover:</code> example: <code
                 class="px-1 rounded bg-gray-700">hover:bg-blue-600</code></li>
-            <li>• Buka file di browser untuk melihat hasilnya</li>
+            <li>• Open the file in your browser to see the result</li>
           </ul>
         </div>
 
         <button id="submit-challenge"
           class="w-full py-4 rounded-xl bg-gradient-to-r from-green-500 to-emerald-500 text-white font-semibold hover:opacity-90 transition-opacity">
-          ✅ Saya Sudah Menyelesaikan Challenge Ini
+          ✅ I Have Completed This Challenge
         </button>
       </section>
 
@@ -634,12 +631,12 @@
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
-          Kembali
+          Back
         </a>
 
         <a id="next-lesson" href="core-concepts.html"
           class="flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-primary-500 to-purple-600 text-white font-medium opacity-50 cursor-not-allowed pointer-events-none transition-all">
-          Lanjut: Core Concepts
+          Next: Core Concepts
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
