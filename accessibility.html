@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="id" class="dark scroll-smooth">
+<html lang="en" class="dark scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accessibility </title>
+  <title>Accessibility | Learn Tailwind CSS</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: { 500: '#667eea', 600: '#5a67d8' } } } } }</script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     class="sidebar fixed left-0 top-0 bottom-0 w-72 bg-gray-900 border-r border-gray-800 z-50 overflow-y-auto hidden lg:block">
     <div class="p-4 border-b border-gray-800"><a href="index.html" class="flex items-center gap-3">
         <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-500 to-purple-600"></div><span
-          class="font-bold">TailwindMaster</span>
+          class="font-bold">Tailwind </span>
       </a></div>
     <nav class="p-4">
       <ul class="space-y-1 text-sm">
@@ -45,16 +45,16 @@
 
     <div class="max-w-4xl mx-auto px-6 py-12">
       <div class="mb-10">
-        <span class="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-sm font-medium">Materi 10/10 - Final!
+        <span class="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-sm font-medium">Lesson 10/10 - Final!
           🎉</span>
         <h1 class="text-4xl font-bold mt-4 mb-3">Accessibility</h1>
-        <p class="text-lg text-gray-400">Best practices accessibility untuk membuat website yang inklusif dan accessible
-          untuk semua orang.</p>
+        <p class="text-lg text-gray-400">Accessibility best practices to create an inclusive and accessible website
+          for everyone.</p>
       </div>
 
       <!-- Daftar Isi -->
       <div class="mb-10 p-4 rounded-xl bg-gray-800/50 border border-gray-700">
-        <h3 class="font-semibold mb-3">📋 Daftar Isi</h3>
+        <h3 class="font-semibold mb-3">📋 Table of Contents</h3>
         <div class="grid md:grid-cols-2 gap-2 text-sm text-gray-300">
           <div>
             <p class="font-semibold text-blue-400 mb-1">Tailwind Utilities</p>
@@ -89,11 +89,11 @@
               class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-500 flex items-center justify-center text-sm">1</span>
             Screen Reader Only (sr-only)
           </h2>
-          <p class="text-gray-300 mb-4">Menyembunyikan elemen secara visual tapi tetap terbaca oleh screen reader.</p>
+          <p class="text-gray-300 mb-4">Hides elements visually but keeps them readable by screen readers.</p>
 
           <div class="grid md:grid-cols-2 gap-4 mb-4">
             <div class="p-4 rounded-lg bg-gray-800">
-              <p class="text-sm text-gray-400 mb-3">Contoh: Icon button dengan label</p>
+              <p class="text-sm text-gray-400 mb-3">Example: Icon button with label</p>
               <button
                 class="p-3 bg-red-500 hover:bg-red-600 rounded-lg transition-colors focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-gray-900"
                 aria-label="Delete">
@@ -101,14 +101,14 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                 </svg>
-                <span class="sr-only">Hapus item</span>
+                <span class="sr-only">Delete item</span>
               </button>
             </div>
             <div class="p-4 rounded-lg bg-gray-800">
               <p class="text-sm text-gray-400 mb-2">Kode:</p>
               <pre class="text-xs overflow-x-auto"><code>&lt;button aria-label="Delete"&gt;
   &lt;svg&gt;...&lt;/svg&gt;
-  &lt;span class="<span class="text-green-400">sr-only</span>"&gt;Hapus item&lt;/span&gt;
+  &lt;span class="<span class="text-green-400">sr-only</span>"&gt;Delete item&lt;/span&gt;
 &lt;/button&gt;</code></pre>
             </div>
           </div>
@@ -124,10 +124,10 @@
               <button class="copy-btn" onclick="copyCode(this)">Copy</button>
             </div>
             <div class="code-content">
-              <pre><span class="comment">&lt;!-- Icon button dengan label untuk screen reader --&gt;</span>
+              <pre><span class="comment">&lt;!-- Icon button with label for screen reader --&gt;</span>
 <span class="tag">&lt;button</span> <span class="attr">class</span>=<span class="string">"p-2 bg-red-500 rounded"</span> <span class="attr">aria-label</span>=<span class="string">"Delete"</span><span class="tag">&gt;</span>
   <span class="tag">&lt;svg</span> <span class="attr">class</span>=<span class="string">"w-5 h-5"</span><span class="tag">&gt;</span>...<span class="tag">&lt;/svg&gt;</span>
-  <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"sr-only"</span><span class="tag">&gt;</span>Hapus item<span class="tag">&lt;/span&gt;</span>
+  <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"sr-only"</span><span class="tag">&gt;</span>Delete item<span class="tag">&lt;/span&gt;</span>
 <span class="tag">&lt;/button&gt;</span>
 
 <span class="comment">&lt;!-- Skip link --&gt;</span>
@@ -145,7 +145,7 @@
               class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-500 flex items-center justify-center text-sm">2</span>
             Not Screen Reader Only (not-sr-only)
           </h2>
-          <p class="text-gray-300 mb-4">Membalik efek sr-only, membuat elemen terlihat kembali.</p>
+          <p class="text-gray-300 mb-4">Reverses the effect of sr-only, making the element visible again.</p>
 
           <div class="p-4 rounded-lg bg-gray-800 mb-4">
             <p class="text-sm text-gray-400 mb-3">Contoh: Skip link yang muncul saat focus</p>
@@ -153,7 +153,7 @@
               class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-gray-900 focus:rounded-lg focus:font-medium">
               Skip to main content
             </a>
-            <p class="text-xs text-gray-500">(Tab ke sini untuk melihat skip link)</p>
+            <p class="text-xs text-gray-500">(Tab here to see the skip link)</p>
           </div>
 
           <div class="p-4 rounded-lg bg-gray-800">
@@ -172,25 +172,25 @@
               class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-500 flex items-center justify-center text-sm">3</span>
             Forced Color Adjust
           </h2>
-          <p class="text-gray-300 mb-4">Mengontrol apakah elemen mengikuti forced colors mode (Windows High Contrast).
+          <p class="text-gray-300 mb-4">Control whether an element follows forced colors mode (Windows High Contrast).
           </p>
 
           <div class="grid md:grid-cols-2 gap-4 mb-4">
             <div class="p-4 rounded-lg bg-gray-800">
               <code class="text-primary-500">forced-color-adjust-auto</code>
-              <p class="text-sm text-gray-400 mt-2">Default - browser menyesuaikan warna otomatis di high contrast mode
+              <p class="text-sm text-gray-400 mt-2">Default - browser automatically adjusts colors in high contrast mode
               </p>
             </div>
             <div class="p-4 rounded-lg bg-gray-800">
               <code class="text-primary-500">forced-color-adjust-none</code>
-              <p class="text-sm text-gray-400 mt-2">Preserve warna asli (gunakan dengan hati-hati!)</p>
+              <p class="text-sm text-gray-400 mt-2">Preserve original colors (use with caution!)</p>
             </div>
           </div>
 
           <div class="p-4 rounded-lg bg-yellow-500/10 border border-yellow-500/30">
-            <p class="text-yellow-400 text-sm">⚠️ <strong>Perhatian:</strong> Hanya gunakan <code
-                class="px-1 bg-gray-800 rounded">forced-color-adjust-none</code> jika benar-benar diperlukan, seperti
-              untuk preserving brand colors atau syntax highlighting.</p>
+            <p class="text-yellow-400 text-sm">⚠️ <strong>Attention:</strong> Only use <code
+                class="px-1 bg-gray-800 rounded">forced-color-adjust-none</code> if absolutely necessary, such as
+              pre-serving brand colors or syntax highlighting.</p>
           </div>
         </section>
 
@@ -206,7 +206,7 @@
               class="w-8 h-8 rounded-lg bg-green-500/20 text-green-500 flex items-center justify-center text-sm">4</span>
             Focus States
           </h2>
-          <p class="text-gray-300 mb-4">Pastikan semua elemen interaktif memiliki focus state yang jelas untuk keyboard
+          <p class="text-gray-300 mb-4">Ensure all interactive elements have a clear focus state for keyboard
             navigation.</p>
 
           <div class="flex flex-wrap gap-4 mb-4">
@@ -216,7 +216,7 @@
             </button>
             <button
               class="px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors focus:outline-none focus:ring-4 focus:ring-green-300">
-              Ring Tebal
+              Thick Ring
             </button>
             <button
               class="px-6 py-3 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-colors focus:outline-2 focus:outline-offset-2 focus:outline-purple-400">
@@ -227,7 +227,7 @@
           <div class="grid md:grid-cols-2 gap-3 text-sm">
             <div class="p-3 rounded bg-gray-800"><code>focus:ring-2</code> - Ring width</div>
             <div class="p-3 rounded bg-gray-800"><code>focus:ring-{color}</code> - Ring color</div>
-            <div class="p-3 rounded bg-gray-800"><code>focus:ring-offset-2</code> - Gap dari element</div>
+            <div class="p-3 rounded bg-gray-800"><code>focus:ring-offset-2</code> - Gap from element</div>
             <div class="p-3 rounded bg-gray-800"><code>focus:ring-offset-{color}</code> - Offset color</div>
             <div class="p-3 rounded bg-gray-800"><code>focus:outline-none</code> - Remove default</div>
             <div class="p-3 rounded bg-gray-800"><code>focus:outline-2</code> - Custom outline</div>
@@ -239,7 +239,7 @@
               <button class="copy-btn" onclick="copyCode(this)">Copy</button>
             </div>
             <div class="code-content">
-              <pre><span class="comment">&lt;!-- Button dengan focus ring --&gt;</span>
+              <pre><span class="comment">&lt;!-- Button with focus ring --&gt;</span>
 <span class="tag">&lt;button</span> <span class="attr">class</span>=<span class="string">"px-4 py-2 bg-blue-500 rounded
         focus:outline-none focus:ring-2 focus:ring-blue-400 
         focus:ring-offset-2 focus:ring-offset-gray-900"</span><span class="tag">&gt;</span>
@@ -261,7 +261,7 @@
               class="w-8 h-8 rounded-lg bg-green-500/20 text-green-500 flex items-center justify-center text-sm">5</span>
             Focus Visible
           </h2>
-          <p class="text-gray-300 mb-4">Hanya tampilkan focus ring saat keyboard navigation, bukan mouse click.</p>
+          <p class="text-gray-300 mb-4">Only show focus ring during keyboard navigation, not on mouse clicks.</p>
 
           <div class="flex gap-4 mb-4">
             <button
@@ -273,14 +273,14 @@
           <div class="p-4 rounded-lg bg-gray-800">
             <pre class="text-xs overflow-x-auto"><code>&lt;button class="<span class="text-green-400">focus-visible:ring-2 focus-visible:ring-blue-400</span>
                focus-visible:ring-offset-2"&gt;
-  Click atau Tab
+  Click or Tab
 &lt;/button&gt;</code></pre>
           </div>
 
           <div class="mt-4 p-4 rounded-lg bg-blue-500/10 border border-blue-500/30">
             <p class="text-blue-300 text-sm">💡 <strong>Difference:</strong> <code
-                class="px-1 bg-gray-800 rounded">focus:</code> muncul di klik & keyboard, sedangkan <code
-                class="px-1 bg-gray-800 rounded">focus-visible:</code> hanya muncul di keyboard navigation.</p>
+                class="px-1 bg-gray-800 rounded">focus:</code> appears on click & keyboard, while <code
+                class="px-1 bg-gray-800 rounded">focus-visible:</code> only appears during keyboard navigation.</p>
           </div>
         </section>
 
@@ -295,21 +295,21 @@
 
           <div class="grid md:grid-cols-2 gap-4 mb-4">
             <div class="p-4 rounded-lg bg-gray-800 border-2 border-green-500">
-              <p class="text-white text-lg font-medium">✅ Baik: text-white + bg-gray-800</p>
-              <p class="text-gray-300 mt-2">Contrast ratio tinggi, mudah dibaca</p>
+              <p class="text-white text-lg font-medium">✅ Good: text-white + bg-gray-800</p>
+              <p class="text-gray-300 mt-2">High contrast ratio, easy to read</p>
             </div>
             <div class="p-4 rounded-lg bg-gray-800 border-2 border-red-500">
-              <p class="text-gray-600 text-lg font-medium">❌ Buruk: text-gray-600</p>
-              <p class="text-gray-700 mt-2">Contrast terlalu rendah</p>
+              <p class="text-gray-600 text-lg font-medium">❌ Bad: text-gray-600</p>
+              <p class="text-gray-700 mt-2">Contrast too low</p>
             </div>
           </div>
 
           <div class="p-4 rounded-lg bg-gray-800">
-            <h4 class="font-semibold mb-2">Rekomendasi Colors untuk Dark Mode:</h4>
+            <h4 class="font-semibold mb-2">Color Recommendations for Dark Mode:</h4>
             <div class="space-y-2 text-sm">
               <div class="flex items-center gap-3">
                 <span class="w-4 h-4 rounded bg-white"></span>
-                <span class="text-white"><code>text-white</code> - Untuk heading utama</span>
+                <span class="text-white"><code>text-white</code> - For main headings</span>
               </div>
               <div class="flex items-center gap-3">
                 <span class="w-4 h-4 rounded bg-gray-100"></span>
@@ -338,24 +338,24 @@
               class="w-8 h-8 rounded-lg bg-green-500/20 text-green-500 flex items-center justify-center text-sm">7</span>
             Motion Preferences
           </h2>
-          <p class="text-gray-300 mb-4">Hormati preferensi user yang tidak ingin animasi (vestibular disorders).</p>
+          <p class="text-gray-300 mb-4">Respect user preferences who do not want animations (vestibular disorders).</p>
 
           <div class="grid md:grid-cols-2 gap-4 mb-4">
             <div class="p-4 rounded-lg bg-gray-800">
               <code class="text-primary-500">motion-safe:animate-*</code>
-              <p class="text-sm text-gray-400 mt-2">Animasi hanya jika user mengizinkan motion</p>
+              <p class="text-sm text-gray-400 mt-2">Animation only if user allows motion</p>
             </div>
             <div class="p-4 rounded-lg bg-gray-800">
               <code class="text-primary-500">motion-reduce:transition-none</code>
-              <p class="text-sm text-gray-400 mt-2">Matikan transisi untuk reduced motion</p>
+              <p class="text-sm text-gray-400 mt-2">Disable transition for reduced motion</p>
             </div>
           </div>
 
           <div class="p-4 rounded-lg bg-gray-800">
-            <pre class="text-xs overflow-x-auto"><code>&lt;!-- Bounce hanya jika motion allowed --&gt;
+            <pre class="text-xs overflow-x-auto"><code>&lt;!-- Bounce only if motion allowed --&gt;
 &lt;div class="<span class="text-green-400">motion-safe:animate-bounce</span>"&gt;...&lt;/div&gt;
 
-&lt;!-- Disable transition untuk reduced motion --&gt;
+&lt;!-- Disable transition for reduced motion --&gt;
 &lt;button class="transition-all <span class="text-green-400">motion-reduce:transition-none</span>"&gt;
   Button
 &lt;/button&gt;</code></pre>
@@ -372,23 +372,23 @@
 
           <div class="grid md:grid-cols-2 gap-4 mb-4">
             <div class="p-4 rounded-lg bg-green-500/10 border border-green-500/30">
-              <p class="text-green-400 font-semibold mb-3">✅ Gunakan:</p>
+              <p class="text-green-400 font-semibold mb-3">✅ Use:</p>
               <ul class="space-y-2 text-sm text-gray-300">
-                <li><code>&lt;button&gt;</code> untuk clickable actions</li>
-                <li><code>&lt;a href&gt;</code> untuk navigation</li>
-                <li><code>&lt;nav&gt;</code> untuk navigation wrapper</li>
-                <li><code>&lt;main&gt;</code> untuk main content</li>
+                <li><code>&lt;button&gt;</code> for clickable actions</li>
+                <li><code>&lt;a href&gt;</code> for navigation</li>
+                <li><code>&lt;nav&gt;</code> for navigation wrapper</li>
+                <li><code>&lt;main&gt;</code> for main content</li>
                 <li><code>&lt;header&gt;</code> / <code>&lt;footer&gt;</code></li>
                 <li><code>&lt;article&gt;</code> / <code>&lt;section&gt;</code></li>
-                <li><code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> dengan urutan benar</li>
+                <li><code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> with correct order</li>
               </ul>
             </div>
             <div class="p-4 rounded-lg bg-red-500/10 border border-red-500/30">
-              <p class="text-red-400 font-semibold mb-3">❌ Hindari:</p>
+              <p class="text-red-400 font-semibold mb-3">❌ Avoid:</p>
               <ul class="space-y-2 text-sm text-gray-300">
-                <li><code>&lt;div onclick&gt;</code> sebagai button</li>
-                <li><code>&lt;span&gt;</code> sebagai heading</li>
-                <li><code>&lt;div role="link"&gt;</code> (pakai <code>&lt;a&gt;</code>)</li>
+                <li><code>&lt;div onclick&gt;</code> as a button</li>
+                <li><code>&lt;span&gt;</code> as a heading</li>
+                <li><code>&lt;div role="link"&gt;</code> (use <code>&lt;a&gt;</code>)</li>
                 <li>Skip heading levels (h1 → h3)</li>
                 <li>Multiple <code>&lt;h1&gt;</code> per page</li>
               </ul>
@@ -425,14 +425,14 @@
           </div>
 
           <div class="p-4 rounded-lg bg-gray-800">
-            <h4 class="font-semibold mb-2">Checklist Form Accessible:</h4>
+            <h4 class="font-semibold mb-2">Accessible Form Checklist:</h4>
             <ul class="space-y-1 text-sm text-gray-300">
-              <li>✓ Setiap input punya <code class="px-1 bg-gray-700 rounded">&lt;label for="..."&gt;</code></li>
-              <li>✓ Required fields marked dengan <code class="px-1 bg-gray-700 rounded">aria-required="true"</code>
+              <li>✓ Each input has a <code class="px-1 bg-gray-700 rounded">&lt;label for="..."&gt;</code></li>
+              <li>✓ Required fields marked with <code class="px-1 bg-gray-700 rounded">aria-required="true"</code>
               </li>
-              <li>✓ Error messages terhubung dengan <code class="px-1 bg-gray-700 rounded">aria-describedby</code></li>
-              <li>✓ Form fields bisa diakses dengan Tab</li>
-              <li>✓ Visual indication untuk required (*)</li>
+              <li>✓ Error messages linked with <code class="px-1 bg-gray-700 rounded">aria-describedby</code></li>
+              <li>✓ Form fields accessible via Tab</li>
+              <li>✓ Visual indication for required (*)</li>
             </ul>
           </div>
         </section>
@@ -487,7 +487,7 @@
       <div class="my-10 p-6 rounded-xl bg-gray-800/50 border border-gray-700">
         <label class="flex items-center gap-4 cursor-pointer">
           <input type="checkbox" id="reading-checkbox" class="w-5 h-5 rounded accent-primary-500">
-          <span class="font-semibold">Saya sudah membaca dan memahami materi Accessibility</span>
+          <span class="font-semibold">I have read and understood the Accessibility material</span>
         </label>
       </div>
 
@@ -497,12 +497,12 @@
         <div class="flex items-center gap-3 mb-4">
           <span class="text-4xl">🏆</span>
           <div>
-            <h2 class="text-2xl font-bold">Final Challenge: Landing Page Full Tailwind</h2>
+            <h2 class="text-2xl font-bold">Final Challenge: Full Tailwind Landing Page</h2>
             <p class="text-gray-400 text-sm">Build a complete, accessible & responsive landing page</p>
           </div>
         </div>
 
-        <p class="text-gray-300 mb-6">Bangun landing page lengkap yang menggabungkan semua yang sudah dipelajari!</p>
+        <p class="text-gray-300 mb-6">Build a complete landing page that combines everything you've learned!</p>
 
         <!-- Requirements -->
         <div class="mb-6 p-4 rounded-lg bg-gray-800/50 border border-gray-700">
@@ -514,7 +514,7 @@
                 <li>□ Mobile-first design</li>
                 <li>□ Breakpoints (sm, md, lg)</li>
                 <li>□ Flexbox & Grid layout</li>
-                <li>□ Container dengan max-width</li>
+                <li>□ Container with max-width</li>
               </ul>
             </div>
             <div>
@@ -690,21 +690,21 @@
         <div class="mb-6 p-4 rounded-lg bg-yellow-500/10 border border-yellow-500/30">
           <h3 class="font-semibold text-yellow-400 mb-3">✨ Bonus Challenges:</h3>
           <ul class="text-sm text-gray-300 space-y-2">
-            <li>□ Add mobile hamburger menu dengan JavaScript</li>
+            <li>□ Add mobile hamburger menu with JavaScript</li>
             <li>□ Implement dark/light mode toggle</li>
-            <li>□ Add scroll animations dengan <code class="px-1 rounded bg-gray-700">motion-safe:</code></li>
-            <li>□ Create pricing cards dengan hover effects</li>
-            <li>□ Add testimonial section dengan carousel (scroll-snap)</li>
+            <li>□ Add scroll animations with <code class="px-1 rounded bg-gray-700">motion-safe:</code></li>
+            <li>□ Create pricing cards with hover effects</li>
+            <li>□ Add testimonial section with carousel (scroll-snap)</li>
           </ul>
         </div>
 
         <!-- Interactive Playground -->
         <div class="mb-6">
           <h3 class="font-semibold mb-3 flex items-center gap-2">
-            🎮 Coba Langsung
+            🎮 Try it Direct
             <span class="playground-badge">Live</span>
           </h3>
-          <p class="text-sm text-gray-400 mb-4">Coba fitur accessibility seperti focus ring dan sr-only!</p>
+          <p class="text-sm text-gray-400 mb-4">Try accessibility features like focus ring and sr-only!</p>
 
           <div class="playground">
             <div class="playground-header">
@@ -720,14 +720,14 @@
             <div class="playground-body">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false"><!-- Focus state - klik lalu tekan Tab -->
+                <textarea class="playground-editor" spellcheck="false"><!-- Focus state - click then press Tab -->
 <button class="px-6 py-3 bg-blue-500 text-white rounded-lg
         focus:outline-none focus:ring-2 focus:ring-blue-400 
         focus:ring-offset-2 focus:ring-offset-gray-900">
-  Tab ke sini! (focus:ring)
+  Tab here! (focus:ring)
 </button>
 
-<!-- focus-visible: hanya muncul saat keyboard -->
+<!-- focus-visible: only appears during keyboard -->
 <button class="px-6 py-3 bg-green-500 text-white rounded-lg mt-4
         focus-visible:outline-none focus-visible:ring-2 
         focus-visible:ring-green-400 focus-visible:ring-offset-2">
@@ -762,16 +762,16 @@
 
         <button id="submit-challenge"
           class="w-full py-4 rounded-xl bg-gradient-to-r from-green-500 to-emerald-500 text-white font-bold text-lg hover:opacity-90 transition-all hover:shadow-lg hover:shadow-green-500/25 focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-gray-900">
-          🎉 Saya Sudah Menyelesaikan Final Challenge!
+          🎉 I Have Completed the Final Challenge!
         </button>
       </section>
 
       <!-- Completion Banner -->
       <div class="p-8 rounded-2xl bg-gradient-to-r from-primary-500 to-purple-600 text-white text-center mb-10">
         <span class="text-5xl mb-4 block">🎊</span>
-        <h2 class="text-3xl font-bold mb-3">Selamat!</h2>
-        <p class="text-lg opacity-90 mb-4">Kamu telah menyelesaikan semua 10 materi Tailwind CSS!</p>
-        <p class="text-sm opacity-75">Sekarang praktik terus dan bangun project nyata. The best way to learn is by
+        <h2 class="text-3xl font-bold mb-3">Congratulations!</h2>
+        <p class="text-lg opacity-90 mb-4">You have completed all 10 lessons of Tailwind CSS!</p>
+        <p class="text-sm opacity-75">Now keep practicing and build real projects. The best way to learn is by
           building!</p>
       </div>
 
@@ -780,7 +780,7 @@
         <a href="interactivity-svg.html" class="px-6 py-3 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors">←
           Interactivity & SVG</a>
         <a href="index.html"
-          class="px-6 py-3 rounded-lg bg-primary-500 hover:bg-primary-600 text-white transition-colors">🏠 Kembali ke
+          class="px-6 py-3 rounded-lg bg-primary-500 hover:bg-primary-600 text-white transition-colors">🏠 Back to
           Home</a>
       </div>
     </div>

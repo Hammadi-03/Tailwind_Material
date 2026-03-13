@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="id" class="dark">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tables, Transitions & Animation | Belajar Tailwind CSS</title>
+  <title>Tables, Transitions & Animation | Learn Tailwind CSS</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: { 500: '#667eea', 600: '#5a67d8' } } } } }</script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     class="sidebar fixed left-0 top-0 bottom-0 w-72 bg-gray-900 border-r border-gray-800 z-50 overflow-y-auto hidden lg:block">
     <div class="p-4 border-b border-gray-800"><a href="index.html" class="flex items-center gap-3">
         <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-500 to-purple-600"></div><span
-          class="font-bold">TailwindMaster</span>
+          class="font-bold">Tailwind </span>
       </a></div>
     <nav class="p-4">
       <ul class="space-y-1 text-sm">
@@ -44,15 +44,15 @@
 
     <div class="max-w-4xl mx-auto px-6 py-12">
       <div class="mb-10">
-        <span class="px-3 py-1 rounded-full bg-primary-500/20 text-primary-500 text-sm">Materi 8/10</span>
+        <span class="px-3 py-1 rounded-full bg-primary-500/20 text-primary-500 text-sm">Lesson 8/10</span>
         <h1 class="text-4xl font-bold mt-4 mb-3">Tables, Transitions, Animation & Transform</h1>
-        <p class="text-lg text-gray-400">Membuat table yang rapi dan UI yang hidup dengan transitions, animations, dan
+        <p class="text-lg text-gray-400">Create neat tables and a lively UI with transitions, animations, and
           transforms.</p>
       </div>
 
       <!-- Daftar Isi -->
       <div class="mb-10 p-4 rounded-xl bg-gray-800/50 border border-gray-700">
-        <h3 class="font-semibold mb-3">📋 Daftar Isi</h3>
+        <h3 class="font-semibold mb-3">📋 Table of Contents</h3>
         <div class="grid md:grid-cols-2 gap-2 text-sm text-gray-300">
           <div>
             <p class="font-semibold text-blue-400 mb-1">Tables</p>
@@ -99,21 +99,21 @@
           <div class="grid md:grid-cols-2 gap-4 mb-4">
             <div class="p-3 rounded bg-gray-800">
               <code class="text-primary-500">table-auto</code>
-              <p class="text-xs text-gray-400 mt-1">Kolom menyesuaikan konten (default)</p>
+              <p class="text-xs text-gray-400 mt-1">Columns adjust to content (default)</p>
             </div>
             <div class="p-3 rounded bg-gray-800">
               <code class="text-primary-500">table-fixed</code>
-              <p class="text-xs text-gray-400 mt-1">Kolom lebar sama</p>
+              <p class="text-xs text-gray-400 mt-1">Fixed width columns</p>
             </div>
           </div>
 
           <!-- Table Example -->
           <div class="p-4 rounded-lg bg-gray-800/50 overflow-x-auto">
-            <p class="text-sm text-gray-400 mb-3">Contoh Table dengan Tailwind:</p>
+            <p class="text-sm text-gray-400 mb-3">Table Example with Tailwind:</p>
             <table class="w-full text-sm">
               <thead>
                 <tr class="border-b border-gray-700 text-left">
-                  <th class="py-3 px-4 font-semibold">Nama</th>
+                  <th class="py-3 px-4 font-semibold">Name</th>
                   <th class="py-3 px-4 font-semibold">Email</th>
                   <th class="py-3 px-4 font-semibold">Role</th>
                   <th class="py-3 px-4 font-semibold">Status</th>
@@ -157,15 +157,15 @@
           <div class="grid md:grid-cols-2 gap-4">
             <div class="p-3 rounded bg-gray-800">
               <code class="text-primary-500">border-collapse</code>
-              <p class="text-xs text-gray-400 mt-1">Gabungkan border cells</p>
+              <p class="text-xs text-gray-400 mt-1">Combine border cells</p>
             </div>
             <div class="p-3 rounded bg-gray-800">
               <code class="text-primary-500">border-separate</code>
-              <p class="text-xs text-gray-400 mt-1">Pisahkan border cells</p>
+              <p class="text-xs text-gray-400 mt-1">Separate border cells</p>
             </div>
             <div class="p-3 rounded bg-gray-800">
               <code class="text-primary-500">border-spacing-2</code>
-              <p class="text-xs text-gray-400 mt-1">Jarak antar cells (0.5rem)</p>
+              <p class="text-xs text-gray-400 mt-1">Cell spacing (0.5rem)</p>
             </div>
             <div class="p-3 rounded bg-gray-800">
               <code class="text-primary-500">border-spacing-x-4</code>
@@ -200,16 +200,16 @@
               class="w-8 h-8 rounded-lg bg-green-500/20 text-green-500 flex items-center justify-center text-sm">4</span>
             Transition Property
           </h2>
-          <p class="text-gray-300 mb-4">Menentukan properti mana yang akan di-transition.</p>
+          <p class="text-gray-300 mb-4">Determine which properties will be transitioned.</p>
 
           <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4">
             <div class="p-3 rounded bg-gray-800">
               <code class="text-primary-500">transition-none</code>
-              <p class="text-xs text-gray-400 mt-1">Tidak ada transition</p>
+              <p class="text-xs text-gray-400 mt-1">No transition</p>
             </div>
             <div class="p-3 rounded bg-gray-800">
               <code class="text-primary-500">transition-all</code>
-              <p class="text-xs text-gray-400 mt-1">Semua properti</p>
+              <p class="text-xs text-gray-400 mt-1">All properties</p>
             </div>
             <div class="p-3 rounded bg-gray-800">
               <code class="text-primary-500">transition</code>
@@ -235,7 +235,7 @@
 
           <!-- Live Examples -->
           <div class="p-4 rounded-lg bg-gray-800/50">
-            <p class="text-sm text-gray-400 mb-3">Hover untuk melihat perbedaan:</p>
+            <p class="text-sm text-gray-400 mb-3">Hover to see the difference:</p>
             <div class="flex flex-wrap gap-3">
               <button
                 class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded transition-colors duration-300">transition-colors</button>
@@ -305,7 +305,7 @@
           </div>
 
           <div class="p-4 rounded-lg bg-gray-800/50">
-            <p class="text-sm text-gray-400 mb-3">Perbedaan duration:</p>
+            <p class="text-sm text-gray-400 mb-3">Duration difference:</p>
             <div class="flex gap-3">
               <button
                 class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded transition-colors duration-150 text-sm">150ms</button>
@@ -328,24 +328,24 @@
           <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
             <div class="p-3 rounded bg-gray-800">
               <code class="text-primary-500">ease-linear</code>
-              <p class="text-xs text-gray-400 mt-1">Kecepatan konstan</p>
+              <p class="text-xs text-gray-400 mt-1">Constant speed</p>
             </div>
             <div class="p-3 rounded bg-gray-800">
               <code class="text-primary-500">ease-in</code>
-              <p class="text-xs text-gray-400 mt-1">Mulai lambat</p>
+              <p class="text-xs text-gray-400 mt-1">Slow start</p>
             </div>
             <div class="p-3 rounded bg-gray-800">
               <code class="text-primary-500">ease-out</code>
-              <p class="text-xs text-gray-400 mt-1">Akhir lambat</p>
+              <p class="text-xs text-gray-400 mt-1">Slow end</p>
             </div>
             <div class="p-3 rounded bg-gray-800">
               <code class="text-primary-500">ease-in-out</code>
-              <p class="text-xs text-gray-400 mt-1">Keduanya ⭐</p>
+              <p class="text-xs text-gray-400 mt-1">Both ⭐</p>
             </div>
           </div>
 
           <div class="p-4 rounded-lg bg-gray-800/50">
-            <p class="text-sm text-gray-400 mb-3">Hover untuk melihat perbedaan easing (perhatikan translate):</p>
+            <p class="text-sm text-gray-400 mb-3">Hover to see easing differences (observe translate):</p>
             <div class="flex gap-3">
               <button
                 class="px-4 py-2 bg-blue-500 hover:-translate-y-2 text-white rounded transition-transform duration-500 ease-linear text-sm">linear</button>
@@ -433,7 +433,7 @@
           </div>
 
           <div class="p-4 rounded-lg bg-gray-800/50">
-            <p class="text-sm text-gray-400 mb-3">Hover untuk scale:</p>
+            <p class="text-sm text-gray-400 mb-3">Hover to scale:</p>
             <div class="flex items-center justify-center gap-8">
               <div
                 class="w-16 h-16 bg-blue-500 rounded-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center text-xs">
@@ -447,8 +447,8 @@
             </div>
           </div>
 
-          <p class="text-sm text-gray-400 mt-2">Juga tersedia: <code class="px-1 bg-gray-800 rounded">scale-x-*</code>
-            dan <code class="px-1 bg-gray-800 rounded">scale-y-*</code></p>
+          <p class="text-sm text-gray-400 mt-2">Also available: <code class="px-1 bg-gray-800 rounded">scale-x-*</code>
+            and <code class="px-1 bg-gray-800 rounded">scale-y-*</code></p>
         </section>
 
         <!-- 9. Rotate -->
@@ -468,11 +468,11 @@
             <div class="p-2 rounded bg-gray-800"><code>rotate-45</code></div>
             <div class="p-2 rounded bg-gray-800"><code>rotate-90</code></div>
             <div class="p-2 rounded bg-gray-800"><code>rotate-180</code></div>
-            <div class="p-2 rounded bg-gray-800"><code>-rotate-45</code> (negatif)</div>
+            <div class="p-2 rounded bg-gray-800"><code>-rotate-45</code> (negative)</div>
           </div>
 
           <div class="p-4 rounded-lg bg-gray-800/50">
-            <p class="text-sm text-gray-400 mb-3">Hover untuk rotate:</p>
+            <p class="text-sm text-gray-400 mb-3">Hover to rotate:</p>
             <div class="flex items-center justify-center gap-8">
               <div
                 class="w-16 h-16 bg-blue-500 rounded-lg hover:rotate-12 transition-transform duration-300 flex items-center justify-center text-xs">
@@ -506,7 +506,7 @@
           </div>
 
           <div class="p-4 rounded-lg bg-gray-800/50">
-            <p class="text-sm text-gray-400 mb-3">Hover untuk translate (lift effect):</p>
+            <p class="text-sm text-gray-400 mb-3">Hover to translate (lift effect):</p>
             <div class="flex items-center justify-center gap-8">
               <div
                 class="w-16 h-16 bg-blue-500 rounded-lg hover:-translate-y-2 transition-transform duration-300 flex items-center justify-center text-xs">
@@ -557,7 +557,7 @@
               class="w-8 h-8 rounded-lg bg-pink-500/20 text-pink-500 flex items-center justify-center text-sm">12</span>
             Transform Origin
           </h2>
-          <p class="text-gray-300 mb-4">Titik referensi untuk transformasi (scale, rotate).</p>
+          <p class="text-gray-300 mb-4">Reference point for transformations (scale, rotate).</p>
 
           <div class="grid grid-cols-3 gap-2 text-xs mb-4">
             <div class="p-2 rounded bg-gray-800 text-center">origin-top-left</div>
@@ -572,7 +572,7 @@
           </div>
 
           <div class="p-4 rounded-lg bg-gray-800/50">
-            <p class="text-sm text-gray-400 mb-3">Hover rotate dengan origin berbeda:</p>
+            <p class="text-sm text-gray-400 mb-3">Hover rotate with different origins:</p>
             <div class="flex items-center justify-center gap-8">
               <div
                 class="w-16 h-16 bg-blue-500 rounded origin-center hover:rotate-45 transition-transform duration-300 flex items-center justify-center text-xs">
@@ -589,14 +589,14 @@
 
         <!-- Common Mistakes -->
         <section class="p-4 rounded-lg bg-red-500/10 border border-red-500/30">
-          <h3 class="font-bold text-red-400 mb-3">⚠️ Kesalahan Umum Pemula</h3>
+          <h3 class="font-bold text-red-400 mb-3">⚠️ Common Beginner Mistakes</h3>
           <ul class="text-gray-300 space-y-2 text-sm">
-            <li>• Lupa menambahkan <code class="px-1 rounded bg-gray-800">transition-*</code> sebelum hover transform
+            <li>• Forgetting to add <code class="px-1 rounded bg-gray-800">transition-*</code> before hover transform
             </li>
-            <li>• Menggunakan <code class="px-1 rounded bg-gray-800">duration</code> terlalu lama (gunakan 150-300ms
-              untuk UI)</li>
-            <li>• Terlalu banyak animasi sekaligus (distracting)</li>
-            <li>• Tidak menggunakan <code class="px-1 rounded bg-gray-800">will-change</code> untuk animasi kompleks
+            <li>• Using <code class="px-1 rounded bg-gray-800">duration</code> too long (use 150-300ms
+              for UI)</li>
+            <li>• Too many animations at once (distracting)</li>
+            <li>• Not using <code class="px-1 rounded bg-gray-800">will-change</code> for complex animations
             </li>
           </ul>
         </section>
@@ -607,14 +607,14 @@
       <div class="my-10 p-6 rounded-xl bg-gray-800/50 border border-gray-700">
         <label class="flex items-center gap-4 cursor-pointer">
           <input type="checkbox" id="reading-checkbox" class="w-5 h-5 rounded">
-          <span class="font-semibold">Saya sudah membaca dan memahami materi ini</span>
+          <span class="font-semibold">I have read and understood this lesson</span>
         </label>
       </div>
 
       <!-- Challenge -->
       <section class="challenge-section p-6 rounded-xl mb-10">
-        <h2 class="text-xl font-bold mb-4">🎯 Challenge: Animasi Hover Button & Card</h2>
-        <p class="text-gray-300 mb-6">Tambahkan animasi hover ke button dan card. Berikut contoh interaktif:</p>
+        <h2 class="text-xl font-bold mb-4">🎯 Challenge: Hover Button & Card Animation</h2>
+        <p class="text-gray-300 mb-6">Add hover animations to buttons and cards. Here is an interactive example:</p>
 
         <!-- Preview -->
         <div class="mb-8 p-6 rounded-xl bg-gray-950 border border-gray-700">
@@ -673,7 +673,7 @@
 
         <!-- Classes Used -->
         <div class="mb-6 p-4 rounded-lg bg-gray-800/50 border border-gray-700">
-          <h3 class="font-semibold mb-3">📝 Pattern Classes yang Digunakan:</h3>
+          <h3 class="font-semibold mb-3">📝 Pattern Classes Used:</h3>
           <div class="grid md:grid-cols-2 gap-4 text-sm">
             <div>
               <p class="text-gray-400 mb-2">Lift Effect:</p>
@@ -697,7 +697,7 @@
 
         <!-- Code Example -->
         <div class="mb-6">
-          <h3 class="font-semibold mb-3">💻 Kode Button & Card</h3>
+          <h3 class="font-semibold mb-3">💻 Button & Card Code</h3>
           <div class="code-block">
             <div class="code-header">
               <span class="filename"><span class="dot html"></span> hover-animation.html</span>
@@ -726,24 +726,25 @@
 
         <!-- Additional Tasks -->
         <div class="mb-6 p-4 rounded-lg bg-yellow-500/10 border border-yellow-500/30">
-          <h3 class="font-semibold text-yellow-400 mb-3">✨ Tantangan Tambahan:</h3>
+          <h3 class="font-semibold text-yellow-400 mb-3">✨ Additional Challenges:</h3>
           <ul class="text-sm text-gray-300 space-y-2">
-            <li>□ Buat button dengan <code class="px-1 rounded bg-gray-700">animate-pulse</code> untuk "Saving..." state
+            <li>□ Create a button with <code class="px-1 rounded bg-gray-700">animate-pulse</code> for "Saving..." state
             </li>
-            <li>□ Tambahkan <code class="px-1 rounded bg-gray-700">group-hover:scale-110</code> pada icon dalam card
+            <li>□ Add <code class="px-1 rounded bg-gray-700">group-hover:scale-110</code> on the icon inside the card
             </li>
-            <li>□ Coba <code class="px-1 rounded bg-gray-700">hover:rotate-3</code> untuk card yang sedikit miring</li>
-            <li>□ Buat loading button dengan <code class="px-1 rounded bg-gray-700">animate-spin</code> pada icon</li>
+            <li>□ Try <code class="px-1 rounded bg-gray-700">hover:rotate-3</code> for a slightly tilted card</li>
+            <li>□ Create a loading button with <code class="px-1 rounded bg-gray-700">animate-spin</code> on the icon
+            </li>
           </ul>
         </div>
 
         <!-- Interactive Playground -->
         <div class="mb-6">
           <h3 class="font-semibold mb-3 flex items-center gap-2">
-            🎮 Coba Langsung
+            🎮 Try it Direct
             <span class="playground-badge">Live</span>
           </h3>
-          <p class="text-sm text-gray-400 mb-4">Coba hover dan modifikasi transisi & animasi!</p>
+          <p class="text-sm text-gray-400 mb-4">Try hovering and modifying transitions & animations!</p>
 
           <div class="playground">
             <div class="playground-header">
@@ -759,7 +760,7 @@
             <div class="playground-body">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false"><!-- Coba ubah duration-300 menjadi duration-1000 -->
+                <textarea class="playground-editor" spellcheck="false"><!-- Try changing duration-300 to duration-1000 -->
 <button class="px-6 py-3 bg-blue-500 text-white rounded-lg 
         transition-all duration-300 
         hover:bg-purple-500 hover:scale-110 hover:-translate-y-2 
@@ -767,7 +768,7 @@
   ✨ Hover Me!
 </button>
 
-<!-- Coba ubah animate-bounce menjadi animate-pulse -->
+<!-- Try changing animate-bounce to animate-pulse -->
 <div class="mt-6 flex gap-4">
   <div class="w-12 h-12 bg-pink-500 rounded-full animate-bounce"></div>
   <div class="w-12 h-12 bg-green-500 rounded-lg animate-spin"></div>
@@ -794,7 +795,7 @@
 
         <button id="submit-challenge"
           class="w-full py-3 rounded-lg bg-green-500 text-white font-semibold hover:bg-green-600 transition-colors">✅
-          Challenge Selesai</button>
+          Challenge Completed</button>
       </section>
 
       <!-- Navigation -->
