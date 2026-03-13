@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="id" class="dark">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Typography </title>
+  <title>Typography | Learn Tailwind CSS</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: { 500: '#667eea', 600: '#5a67d8' } } } } }</script>
   <link
@@ -47,14 +47,14 @@
 
     <div class="max-w-4xl mx-auto px-6 py-12">
       <div class="mb-10">
-        <span class="px-3 py-1 rounded-full bg-primary-500/20 text-primary-500 text-sm">Materi 6/10</span>
+        <span class="px-3 py-1 rounded-full bg-primary-500/20 text-primary-500 text-sm">Lesson 6/10</span>
         <h1 class="text-4xl font-bold mt-4 mb-3">Typography</h1>
-        <p class="text-lg text-gray-400">Mengatur font, ukuran teks, dan semua styling teks di Tailwind CSS.</p>
+        <p class="text-lg text-gray-400">Manage fonts, text size, and all text styling in Tailwind CSS.</p>
       </div>
 
       <!-- Daftar Isi -->
       <div class="mb-10 p-4 rounded-xl bg-gray-800/50 border border-gray-700">
-        <h3 class="font-semibold mb-3">📋 Daftar Isi</h3>
+        <h3 class="font-semibold mb-3">📋 Table of Contents</h3>
         <div class="grid md:grid-cols-3 gap-2 text-sm text-gray-300">
           <a href="#font-family" class="hover:text-primary-500">1. Font Family</a>
           <a href="#font-size" class="hover:text-primary-500">2. Font Size</a>
@@ -80,34 +80,34 @@
               class="w-8 h-8 rounded-lg bg-primary-500/20 text-primary-500 flex items-center justify-center text-sm">1</span>
             Font Family
           </h2>
-          <p class="text-gray-300 mb-4">Mengatur jenis font yang digunakan pada teks. Tailwind menyediakan 3 font family
-            bawaan yang bisa langsung dipakai.</p>
+          <p class="text-gray-300 mb-4">Set the type of font used for text. Tailwind provides 3 built-in font families
+            that can be used directly.</p>
 
           <!-- Penjelasan Detail -->
           <div class="mb-6 p-4 rounded-lg bg-gray-800/50 border border-gray-700">
-            <h4 class="font-semibold text-white mb-3">📚 Penjelasan Font Family</h4>
+            <h4 class="font-semibold text-white mb-3">📚 Font Family Explanation</h4>
             <div class="space-y-3 text-sm text-gray-300">
-              <p><strong class="text-primary-400">Font Family</strong> adalah kumpulan font yang memiliki desain
-                serupa. Di Tailwind CSS,
-                kita bisa mengatur font family dengan class <code class="px-1 bg-gray-700 rounded">font-{family}</code>.
+              <p><strong class="text-primary-400">Font Family</strong> is a collection of fonts that have similar
+                designs. In Tailwind CSS,
+                we can set the font family with the class <code class="px-1 bg-gray-700 rounded">font-{family}</code>.
               </p>
               <div class="grid md:grid-cols-3 gap-4 mt-4">
                 <div class="p-3 rounded bg-gray-700/50">
                   <code class="text-primary-400 font-bold">font-sans</code>
-                  <p class="text-xs mt-1 text-gray-400">Font tanpa serif (tanpa garis dekoratif di ujung huruf). Clean,
-                    modern, mudah dibaca di layar. <br><span class="text-green-400">Contoh: Inter, Helvetica,
+                  <p class="text-xs mt-1 text-gray-400">Fonts without serifs (no decorative lines at the ends of letters). Clean,
+                    modern, easy to read on screen. <br><span class="text-green-400">Example: Inter, Helvetica,
                       Arial</span></p>
                 </div>
                 <div class="p-3 rounded bg-gray-700/50">
                   <code class="text-purple-400 font-bold">font-serif</code>
-                  <p class="text-xs mt-1 text-gray-400">Font dengan serif (ada garis dekoratif). Terlihat klasik dan
-                    formal, bagus untuk artikel. <br><span class="text-green-400">Contoh: Georgia, Times New
+                  <p class="text-xs mt-1 text-gray-400">Fonts with serifs (decorative lines included). Looks classic and
+                    formal, great for articles. <br><span class="text-green-400">Example: Georgia, Times New
                       Roman</span></p>
                 </div>
                 <div class="p-3 rounded bg-gray-700/50">
                   <code class="text-cyan-400 font-bold">font-mono</code>
-                  <p class="text-xs mt-1 text-gray-400">Font dengan lebar karakter sama (monospace). Ideal untuk kode
-                    program dan terminal. <br><span class="text-green-400">Contoh: Monaco, Consolas, Courier</span></p>
+                  <p class="text-xs mt-1 text-gray-400">Fonts with equal character width (monospace). Ideal for code
+                    programs and terminals. <br><span class="text-green-400">Example: Monaco, Consolas, Courier</span></p>
                 </div>
               </div>
             </div>
@@ -115,7 +115,7 @@
 
           <!-- Kapan Menggunakan -->
           <div class="mb-6 p-4 rounded-lg bg-green-500/10 border border-green-500/30">
-            <h4 class="font-semibold text-green-400 mb-2">🎯 Kapan Menggunakan?</h4>
+            <h4 class="font-semibold text-green-400 mb-2">🎯 When to Use?</h4>
             <ul class="text-sm text-gray-300 space-y-1">
               <li>• <code class="px-1 bg-gray-700 rounded">font-sans</code> → UI/Interface, button, label, navigation,
                 body text umum</li>
@@ -142,17 +142,17 @@
           </div>
 
           <div class="p-4 rounded-lg bg-blue-500/10 border border-blue-500/30">
-            <p class="text-blue-300 text-sm">💡 <strong>Tip:</strong> Gunakan <code
-                class="px-1 bg-gray-800 rounded">font-sans</code> untuk UI, <code
-                class="px-1 bg-gray-800 rounded">font-serif</code> untuk artikel/heading, dan <code
-                class="px-1 bg-gray-800 rounded">font-mono</code> untuk kode.</p>
+            <p class="text-blue-300 text-sm">💡 <strong>Tip:</strong> Use <code
+                class="px-1 bg-gray-800 rounded">font-sans</code> for UI, <code
+                class="px-1 bg-gray-800 rounded">font-serif</code> for articles/headings, and <code
+                class="px-1 bg-gray-800 rounded">font-mono</code> for code.</p>
           </div>
 
           <!-- Mini Playground -->
           <div class="mt-4 playground">
             <div class="playground-header">
               <div class="playground-title">
-                <span class="icon">🎮</span> Coba Font Family
+                <span class="icon">🎮</span> Try Font Family
               </div>
               <div class="playground-actions">
                 <button class="playground-btn reset-btn">🔄 Reset</button>
@@ -162,10 +162,10 @@
             <div class="playground-body" style="min-height: 150px;">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false" style="min-height: 100px;"><!-- Coba ubah font-sans menjadi font-serif atau font-mono -->
-<p class="font-sans text-lg">Font Sans: Modern dan clean</p>
-<p class="font-serif text-lg mt-2">Font Serif: Klasik dan elegan</p>
-<p class="font-mono text-lg mt-2">Font Mono: Untuk code</p></textarea>
+                <textarea class="playground-editor" spellcheck="false" style="min-height: 100px;"><!-- Try changing font-sans to font-serif or font-mono -->
+<p class="font-sans text-lg">Font Sans: Modern and clean</p>
+<p class="font-serif text-lg mt-2">Font Serif: Classic and elegant</p>
+<p class="font-mono text-lg mt-2">Font Mono: For code</p></textarea>
               </div>
               <div class="playground-preview">
                 <div class="playground-section-header">Preview</div>
@@ -182,18 +182,18 @@
               class="w-8 h-8 rounded-lg bg-primary-500/20 text-primary-500 flex items-center justify-center text-sm">2</span>
             Font Size
           </h2>
-          <p class="text-gray-300 mb-4">Mengatur ukuran font/teks. Format: <code
+          <p class="text-gray-300 mb-4">Set the font/text size. Format: <code
               class="px-1 rounded bg-gray-800">text-{size}</code></p>
 
           <!-- Penjelasan Detail -->
           <div class="mb-6 p-4 rounded-lg bg-gray-800/50 border border-gray-700">
-            <h4 class="font-semibold text-white mb-3">📚 Penjelasan Font Size</h4>
+            <h4 class="font-semibold text-white mb-3">📚 Font Size Explanation</h4>
             <div class="space-y-3 text-sm text-gray-300">
-              <p><strong class="text-primary-400">Font Size</strong> mengontrol besar kecilnya teks. Tailwind
-                menggunakan skala yang sudah dioptimalkan untuk keterbacaan dan konsistensi desain.</p>
+              <p><strong class="text-primary-400">Font Size</strong> controls the size of the text. Tailwind
+                uses a scale optimized for readability and design consistency.</p>
               <div class="grid md:grid-cols-2 gap-4 mt-4">
                 <div class="p-3 rounded bg-gray-700/50">
-                  <p class="text-xs text-gray-400 mb-2">📏 <strong>Skala Tailwind:</strong></p>
+                  <p class="text-xs text-gray-400 mb-2">📏 <strong>Tailwind Scale:</strong></p>
                   <ul class="text-xs space-y-1">
                     <li><code class="text-primary-400">text-xs</code> → 12px (caption, label kecil)</li>
                     <li><code class="text-primary-400">text-sm</code> → 14px (secondary text)</li>
@@ -203,13 +203,13 @@
                   </ul>
                 </div>
                 <div class="p-3 rounded bg-gray-700/50">
-                  <p class="text-xs text-gray-400 mb-2">💡 <strong>Tips Penggunaan:</strong></p>
+                  <p class="text-xs text-gray-400 mb-2">💡 <strong>Usage Tips:</strong></p>
                   <ul class="text-xs space-y-1">
                     <li>• Body text: <code class="text-green-400">text-base</code> atau <code
                         class="text-green-400">text-lg</code></li>
                     <li>• Caption/label: <code class="text-green-400">text-xs</code> atau <code
                         class="text-green-400">text-sm</code></li>
-                    <li>• Heading utama: <code class="text-green-400">text-3xl</code> ke atas</li>
+                    <li>• Heading utama: <code class="text-green-400">text-3xl</code> and above</li>
                     <li>• Custom size: <code class="text-green-400">text-[17px]</code></li>
                   </ul>
                 </div>
@@ -219,14 +219,13 @@
 
           <!-- Kapan Menggunakan -->
           <div class="mb-6 p-4 rounded-lg bg-green-500/10 border border-green-500/30">
-            <h4 class="font-semibold text-green-400 mb-2">🎯 Kapan Menggunakan?</h4>
+            <h4 class="font-semibold text-green-400 mb-2">🎯 When to Use?</h4>
             <ul class="text-sm text-gray-300 space-y-1">
               <li>• <code class="px-1 bg-gray-700 rounded">text-xs/sm</code> → Helper text, copyright, metadata,
                 timestamp</li>
-              <li>• <code class="px-1 bg-gray-700 rounded">text-base/lg</code> → Paragraf, deskripsi, body content</li>
-              <li>• <code class="px-1 bg-gray-700 rounded">text-xl ~ text-4xl</code> → Heading, judul section, nama
-                produk</li>
-              <li>• <code class="px-1 bg-gray-700 rounded">text-5xl ~ text-9xl</code> → Hero heading, landing page title
+              <li>• <code class="px-1 bg-gray-700 rounded">text-base/lg</code> → Paragraphs, descriptions, body content</li>
+              <li>• <code class="px-1 bg-gray-700 rounded">text-xl ~ text-4xl</code> → Headings, section titles, product names</li>
+              <li>• <code class="px-1 bg-gray-700 rounded">text-5xl ~ text-9xl</code> → Hero headings, landing page titles
               </li>
             </ul>
           </div>
@@ -255,7 +254,7 @@
           <div class="mt-4 playground">
             <div class="playground-header">
               <div class="playground-title">
-                <span class="icon">🎮</span> Coba Font Size
+                <span class="icon">🎮</span> Try Font Size
               </div>
               <div class="playground-actions">
                 <button class="playground-btn reset-btn">🔄 Reset</button>
@@ -265,7 +264,7 @@
             <div class="playground-body" style="min-height: 150px;">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false" style="min-height: 100px;"><!-- Coba ubah text-base menjadi text-xl atau text-3xl -->
+                <textarea class="playground-editor" spellcheck="false" style="min-height: 100px;"><!-- Try changing text-base to text-xl or text-3xl -->
 <p class="text-xs">Extra Small (text-xs)</p>
 <p class="text-base">Base / Default (text-base)</p>
 <p class="text-xl">Extra Large (text-xl)</p>
@@ -286,18 +285,18 @@
               class="w-8 h-8 rounded-lg bg-primary-500/20 text-primary-500 flex items-center justify-center text-sm">3</span>
             Font Weight
           </h2>
-          <p class="text-gray-300 mb-4">Mengatur ketebalan/tebal-tipis font dengan format <code
+          <p class="text-gray-300 mb-4">Set the font thickness/weight with the format <code
               class="px-1 rounded bg-gray-800">font-{weight}</code>.</p>
 
           <!-- Penjelasan Detail -->
           <div class="mb-6 p-4 rounded-lg bg-gray-800/50 border border-gray-700">
-            <h4 class="font-semibold text-white mb-3">📚 Penjelasan Font Weight</h4>
+            <h4 class="font-semibold text-white mb-3">📚 Font Weight Explanation</h4>
             <div class="space-y-3 text-sm text-gray-300">
-              <p><strong class="text-primary-400">Font Weight</strong> mengontrol seberapa tebal atau tipis teks
-                ditampilkan. Nilai berkisar dari 100 (sangat tipis) sampai 900 (sangat tebal).</p>
+              <p><strong class="text-primary-400">Font Weight</strong> controls how thick or thin the text
+                is displayed. Values range from 100 (very thin) to 900 (very thick).</p>
               <div class="grid md:grid-cols-2 gap-4 mt-4">
                 <div class="p-3 rounded bg-gray-700/50">
-                  <p class="text-xs text-gray-400 mb-2">⚖️ <strong>Skala Weight:</strong></p>
+                  <p class="text-xs text-gray-400 mb-2">⚖️ <strong>Weight Scale:</strong></p>
                   <ul class="text-xs space-y-1">
                     <li><code class="text-gray-400">100-200</code> → Sangat tipis (thin, extralight)</li>
                     <li><code class="text-gray-400">300-400</code> → Normal (light, regular)</li>
@@ -306,12 +305,12 @@
                   </ul>
                 </div>
                 <div class="p-3 rounded bg-gray-700/50">
-                  <p class="text-xs text-gray-400 mb-2">⚠️ <strong>Penting:</strong></p>
+                  <p class="text-xs text-gray-400 mb-2">⚠️ <strong>Important:</strong></p>
                   <ul class="text-xs space-y-1">
-                    <li>• Tidak semua font support semua weight</li>
-                    <li>• Pastikan font yang dipakai punya weight yang dibutuhkan</li>
-                    <li>• Google Fonts: pilih weight saat import</li>
-                    <li>• Variable fonts: support semua weight</li>
+                    <li>• Not all fonts support all weights</li>
+                    <li>• Ensure the font used has the required weight</li>
+                    <li>• Google Fonts: select weights during import</li>
+                    <li>• Variable fonts: support all weights</li>
                   </ul>
                 </div>
               </div>
@@ -320,12 +319,12 @@
 
           <!-- Kapan Menggunakan -->
           <div class="mb-6 p-4 rounded-lg bg-green-500/10 border border-green-500/30">
-            <h4 class="font-semibold text-green-400 mb-2">🎯 Kapan Menggunakan?</h4>
+            <h4 class="font-semibold text-green-400 mb-2">🎯 When to Use?</h4>
             <ul class="text-sm text-gray-300 space-y-1">
-              <li>• <code class="px-1 bg-gray-700 rounded">font-normal</code> → Body text, paragraf biasa</li>
-              <li>• <code class="px-1 bg-gray-700 rounded">font-medium</code> → Label, navigation link</li>
-              <li>• <code class="px-1 bg-gray-700 rounded">font-semibold</code> → Sub-heading, emphasis</li>
-              <li>• <code class="px-1 bg-gray-700 rounded">font-bold</code> → Heading, judul, highlight penting</li>
+              <li>• <code class="px-1 bg-gray-700 rounded">font-normal</code> → Body text, regular paragraphs</li>
+              <li>• <code class="px-1 bg-gray-700 rounded">font-medium</code> → Labels, navigation links</li>
+              <li>• <code class="px-1 bg-gray-700 rounded">font-semibold</code> → Sub-headings, emphasis</li>
+              <li>• <code class="px-1 bg-gray-700 rounded">font-bold</code> → Headings, titles, important highlights</li>
             </ul>
           </div>
 
@@ -368,7 +367,7 @@
           <div class="mt-4 playground">
             <div class="playground-header">
               <div class="playground-title">
-                <span class="icon">🎮</span> Coba Font Weight
+                <span class="icon">🎮</span> Try Font Weight
               </div>
               <div class="playground-actions">
                 <button class="playground-btn reset-btn">🔄 Reset</button>
@@ -378,7 +377,7 @@
             <div class="playground-body" style="min-height: 150px;">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false" style="min-height: 100px;"><!-- Coba ubah font-normal menjadi font-bold atau font-light -->
+                <textarea class="playground-editor" spellcheck="false" style="min-height: 100px;"><!-- Try changing font-normal to font-bold or font-light -->
 <p class="font-light text-xl">Font Light (300)</p>
 <p class="font-normal text-xl">Font Normal (400)</p>
 <p class="font-semibold text-xl">Font Semibold (600)</p>
@@ -415,7 +414,7 @@
           <div class="mt-4 playground">
             <div class="playground-header">
               <div class="playground-title">
-                <span class="icon">🎮</span> Coba Font Style
+                <span class="icon">🎮</span> Try Font Style
               </div>
               <div class="playground-actions">
                 <button class="playground-btn reset-btn">🔄 Reset</button>
@@ -425,9 +424,9 @@
             <div class="playground-body" style="min-height: 120px;">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false" style="min-height: 80px;"><!-- Coba tambahkan atau hapus italic -->
-<p class="italic text-xl">Teks ini miring (italic)</p>
-<p class="not-italic text-xl mt-2">Teks ini normal (not-italic)</p></textarea>
+                <textarea class="playground-editor" spellcheck="false" style="min-height: 80px;"><!-- Try adding or removing italic -->
+<p class="italic text-xl">This text is italicized (italic)</p>
+<p class="not-italic text-xl mt-2">This text is normal (not-italic)</p></textarea>
               </div>
               <div class="playground-preview">
                 <div class="playground-section-header">Preview</div>
@@ -444,30 +443,30 @@
               class="w-8 h-8 rounded-lg bg-primary-500/20 text-primary-500 flex items-center justify-center text-sm">5</span>
             Letter Spacing (Tracking)
           </h2>
-          <p class="text-gray-300 mb-4">Mengatur jarak antar huruf dalam kata. Format: <code
+          <p class="text-gray-300 mb-4">Set the space between characters in words. Format: <code
               class="px-1 rounded bg-gray-800">tracking-{size}</code></p>
 
           <!-- Penjelasan Detail -->
           <div class="mb-6 p-4 rounded-lg bg-gray-800/50 border border-gray-700">
-            <h4 class="font-semibold text-white mb-3">📚 Penjelasan Letter Spacing</h4>
+            <h4 class="font-semibold text-white mb-3">📚 Letter Spacing Explanation</h4>
             <div class="space-y-3 text-sm text-gray-300">
-              <p><strong class="text-primary-400">Letter Spacing</strong> (atau Tracking) mengontrol jarak horizontal
-                antar
-                karakter dalam teks. Nilai negatif membuat huruf lebih rapat, nilai positif membuat lebih renggang.</p>
+              <p><strong class="text-primary-400">Letter Spacing</strong> (or Tracking) controls the horizontal space
+                between
+                characters in text. Negative values make letters tighter, positive values make them looser.</p>
               <div class="grid md:grid-cols-2 gap-4 mt-4">
                 <div class="p-3 rounded bg-gray-700/50">
-                  <p class="text-xs text-gray-400 mb-2">📏 <strong>Nilai Tracking:</strong></p>
+                  <p class="text-xs text-gray-400 mb-2">📏 <strong>Tracking Values:</strong></p>
                   <ul class="text-xs space-y-1">
-                    <li><code class="text-red-400">tracking-tighter</code> → -0.05em (sangat rapat)</li>
-                    <li><code class="text-red-400">tracking-tight</code> → -0.025em (rapat)</li>
+                    <li><code class="text-red-400">tracking-tighter</code> → -0.05em (very tight)</li>
+                    <li><code class="text-red-400">tracking-tight</code> → -0.025em (tight)</li>
                     <li><code class="text-gray-400">tracking-normal</code> → 0 (default)</li>
-                    <li><code class="text-green-400">tracking-wide</code> → 0.025em (renggang)</li>
-                    <li><code class="text-green-400">tracking-wider</code> → 0.05em (lebih renggang)</li>
-                    <li><code class="text-green-400">tracking-widest</code> → 0.1em (sangat renggang)</li>
+                    <li><code class="text-green-400">tracking-wide</code> → 0.025em (wide)</li>
+                    <li><code class="text-green-400">tracking-wider</code> → 0.05em (wider)</li>
+                    <li><code class="text-green-400">tracking-widest</code> → 0.1em (very wide)</li>
                   </ul>
                 </div>
                 <div class="p-3 rounded bg-gray-700/50">
-                  <p class="text-xs text-gray-400 mb-2">🎯 <strong>Kapan Menggunakan:</strong></p>
+                  <p class="text-xs text-gray-400 mb-2">🎯 <strong>When to Use:</strong></p>
                   <ul class="text-xs space-y-1">
                     <li>• <code class="text-red-400">tight/tighter</code> → Heading besar, display font</li>
                     <li>• <code class="text-gray-400">normal</code> → Body text, paragraf</li>
@@ -516,7 +515,7 @@
           <div class="mt-4 playground">
             <div class="playground-header">
               <div class="playground-title">
-                <span class="icon">🎮</span> Coba Letter Spacing
+                <span class="icon">🎮</span> Try Letter Spacing
               </div>
               <div class="playground-actions">
                 <button class="playground-btn reset-btn">🔄 Reset</button>
@@ -526,7 +525,7 @@
             <div class="playground-body" style="min-height: 120px;">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false" style="min-height: 80px;"><!-- Coba ubah tracking-normal menjadi tracking-wide atau tracking-widest -->
+                <textarea class="playground-editor" spellcheck="false" style="min-height: 80px;"><!-- Try changing tracking-normal to tracking-wide or tracking-widest -->
 <p class="tracking-normal text-xl">Tracking Normal</p>
 <p class="tracking-wide text-xl mt-2">Tracking Wide</p>
 <p class="tracking-widest text-xl mt-2">Tracking Widest</p></textarea>
@@ -546,7 +545,7 @@
               class="w-8 h-8 rounded-lg bg-primary-500/20 text-primary-500 flex items-center justify-center text-sm">6</span>
             Line Height (Leading)
           </h2>
-          <p class="text-gray-300 mb-4">Mengatur jarak antar baris. Format: <code
+          <p class="text-gray-300 mb-4">Set the space between lines. Format: <code
               class="px-1 rounded bg-gray-800">leading-{size}</code></p>
 
           <div class="grid md:grid-cols-3 gap-4 mb-4">
@@ -583,16 +582,16 @@
           </div>
 
           <div class="p-4 rounded-lg bg-yellow-500/10 border border-yellow-500/30">
-            <p class="text-yellow-400 text-sm">💡 <strong>Best Practice:</strong> Gunakan <code
-                class="px-1 bg-gray-800 rounded">leading-relaxed</code> atau <code
-                class="px-1 bg-gray-800 rounded">leading-7</code> untuk artikel agar mudah dibaca!</p>
+            <p class="text-yellow-400 text-sm">💡 <strong>Best Practice:</strong> Use <code
+                class="px-1 bg-gray-800 rounded">leading-relaxed</code> or <code
+                class="px-1 bg-gray-800 rounded">leading-7</code> for articles for better readability!</p>
           </div>
 
           <!-- Mini Playground -->
           <div class="mt-4 playground">
             <div class="playground-header">
               <div class="playground-title">
-                <span class="icon">🎮</span> Coba Line Height
+                <span class="icon">🎮</span> Try Line Height
               </div>
               <div class="playground-actions">
                 <button class="playground-btn reset-btn">🔄 Reset</button>
@@ -602,13 +601,13 @@
             <div class="playground-body" style="min-height: 150px;">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false" style="min-height: 100px;"><!-- Coba ubah leading-normal menjadi leading-loose atau leading-tight -->
+                <textarea class="playground-editor" spellcheck="false" style="min-height: 100px;"><!-- Try changing leading-normal to leading-loose or leading-tight -->
 <p class="leading-normal">
   Lorem ipsum dolor sit amet consectetur adipiscing elit. 
   Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 </p>
 <p class="leading-relaxed mt-4">
-  Leading-relaxed: Lebih nyaman dibaca untuk artikel panjang.
+  Leading-relaxed: More comfortable to read for long articles.
 </p></textarea>
               </div>
               <div class="playground-preview">
@@ -677,7 +676,7 @@
           <div class="mt-4 playground">
             <div class="playground-header">
               <div class="playground-title">
-                <span class="icon">🎮</span> Coba Text Color
+                <span class="icon">🎮</span> Try Text Color
               </div>
               <div class="playground-actions">
                 <button class="playground-btn reset-btn">🔄 Reset</button>
@@ -687,7 +686,7 @@
             <div class="playground-body" style="min-height: 120px;">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false" style="min-height: 80px;"><!-- Coba ubah warna dan shade: text-blue-500 → text-red-600 -->
+                <textarea class="playground-editor" spellcheck="false" style="min-height: 80px;"><!-- Try changing color and shade: text-blue-500 → text-red-600 -->
 <p class="text-blue-500 text-xl">Text Blue 500</p>
 <p class="text-green-400 text-xl mt-2">Text Green 400</p>
 <p class="text-purple-600 text-xl mt-2">Text Purple 600</p></textarea>
@@ -785,61 +784,61 @@
               class="w-8 h-8 rounded-lg bg-primary-500/20 text-primary-500 flex items-center justify-center text-sm">11</span>
             Text Overflow
           </h2>
-          <p class="text-gray-300 mb-4">Mengontrol bagaimana teks ditampilkan ketika melebihi batas container.</p>
+          <p class="text-gray-300 mb-4">Control how text is displayed when it exceeds the container's bound.</p>
 
           <!-- Penjelasan Detail -->
           <div class="mb-6 p-4 rounded-lg bg-gray-800/50 border border-gray-700">
-            <h4 class="font-semibold text-white mb-3">📚 Penjelasan Text Overflow</h4>
+            <h4 class="font-semibold text-white mb-3">📚 Text Overflow Explanation</h4>
             <div class="space-y-3 text-sm text-gray-300">
-              <p><strong class="text-primary-400">Text Overflow</strong> menentukan bagaimana teks yang terlalu panjang
-                ditangani dalam container dengan ruang terbatas. Sangat berguna untuk menampilkan preview teks,
-                judul produk, atau konten dalam card yang harus tetap rapi.</p>
+              <p><strong class="text-primary-400">Text Overflow</strong> determines how text that is too long
+                is handled in a container with limited space. Very useful for showing text previews,
+                product titles, or content in cards that must stay neat.</p>
               <div class="grid md:grid-cols-2 gap-4 mt-4">
                 <div class="p-3 rounded bg-gray-700/50">
-                  <p class="text-xs text-gray-400 mb-2">✂️ <strong>Jenis Text Overflow:</strong></p>
+                  <p class="text-xs text-gray-400 mb-2">✂️ <strong>Types of Text Overflow:</strong></p>
                   <ul class="text-xs space-y-2">
                     <li>
                       <code class="text-primary-400">truncate</code>
-                      <p class="text-gray-500 mt-1">Shorthand untuk memotong teks dengan "..." di akhir. Sudah termasuk
+                      <p class="text-gray-500 mt-1">Shorthand to cut text with "..." at the end. Already includes
                         <code class="text-gray-400">overflow-hidden</code>, <code
-                          class="text-gray-400">text-ellipsis</code>, dan <code
+                          class="text-gray-400">text-ellipsis</code>, and <code
                           class="text-gray-400">whitespace-nowrap</code>.
                       </p>
                     </li>
                     <li>
                       <code class="text-green-400">text-ellipsis</code>
-                      <p class="text-gray-500 mt-1">Menampilkan "..." ketika teks terpotong. Perlu dikombinasikan dengan
+                      <p class="text-gray-500 mt-1">Displays "..." when text is cut. Needs to be combined with
                         <code class="text-gray-400">overflow-hidden</code>.
                       </p>
                     </li>
                     <li>
                       <code class="text-yellow-400">text-clip</code>
-                      <p class="text-gray-500 mt-1">Memotong teks langsung tanpa "..." - teks terputus tiba-tiba.</p>
+                      <p class="text-gray-500 mt-1">Cuts text directly without "..." - text breaks off suddenly.</p>
                     </li>
                     <li>
                       <code class="text-purple-400">line-clamp-{n}</code>
-                      <p class="text-gray-500 mt-1">Membatasi jumlah baris yang ditampilkan (1-6). Teks akan dipotong
-                        dengan "..." setelah baris ke-n.</p>
+                      <p class="text-gray-500 mt-1">Limits the number of lines displayed (1-6). Text will be cut
+                        with "..." after line n.</p>
                     </li>
                   </ul>
                 </div>
                 <div class="p-3 rounded bg-gray-700/50">
-                  <p class="text-xs text-gray-400 mb-2">⚠️ <strong>Penting untuk Diingat:</strong></p>
+                  <p class="text-xs text-gray-400 mb-2">⚠️ <strong>Important to Remember:</strong></p>
                   <ul class="text-xs space-y-2">
                     <li>
                       <p class="text-gray-300"><strong class="text-red-400">truncate</strong> = <code
                           class="text-xs">overflow-hidden + text-ellipsis + whitespace-nowrap</code></p>
-                      <p class="text-gray-500">Ini class all-in-one, paling mudah dipakai!</p>
+                      <p class="text-gray-500">This is an all-in-one class, the easiest to use!</p>
                     </li>
                     <li>
-                      <p class="text-gray-300"><strong class="text-red-400">line-clamp</strong> untuk multi-line</p>
-                      <p class="text-gray-500">Berbeda dengan truncate yang hanya 1 baris, line-clamp bisa membatasi 2,
-                        3, atau lebih baris.</p>
+                      <p class="text-gray-300"><strong class="text-red-400">line-clamp</strong> for multi-line</p>
+                      <p class="text-gray-500">Different from truncate which is only 1 line, line-clamp can limit to 2,
+                        3, or more lines.</p>
                     </li>
                     <li>
-                      <p class="text-gray-300"><strong class="text-red-400">Container width</strong> harus terbatas</p>
-                      <p class="text-gray-500">Overflow hanya bekerja jika container punya batas lebar (tidak
-                        <code>w-full</code> di parent tak terbatas).
+                      <p class="text-gray-300"><strong class="text-red-400">Container width</strong> must be limited</p>
+                      <p class="text-gray-500">Overflow only works if the container has a width limit (not
+                        <code>w-full</code> in an unlimited parent).
                       </p>
                     </li>
                   </ul>
@@ -850,25 +849,23 @@
 
           <!-- Kapan Menggunakan -->
           <div class="mb-6 p-4 rounded-lg bg-green-500/10 border border-green-500/30">
-            <h4 class="font-semibold text-green-400 mb-2">🎯 Kapan Menggunakan?</h4>
+            <h4 class="font-semibold text-green-400 mb-2">🎯 When to Use?</h4>
             <ul class="text-sm text-gray-300 space-y-1">
-              <li>• <code class="px-1 bg-gray-700 rounded">truncate</code> → Judul produk dalam card, username, nama
-                file, sidebar menu item</li>
-              <li>• <code class="px-1 bg-gray-700 rounded">line-clamp-2</code> → Deskripsi preview di card produk, blog
-                excerpt</li>
-              <li>• <code class="px-1 bg-gray-700 rounded">line-clamp-3</code> → Preview artikel, komentar yang dipotong
+              <li>• <code class="px-1 bg-gray-700 rounded">truncate</code> → Product titles in cards, usernames, file names, sidebar menu items</li>
+              <li>• <code class="px-1 bg-gray-700 rounded">line-clamp-2</code> → Description previews in product cards, blog excerpts</li>
+              <li>• <code class="px-1 bg-gray-700 rounded">line-clamp-3</code> → Article previews, truncated comments
               </li>
-              <li>• <code class="px-1 bg-gray-700 rounded">text-clip</code> → Efek visual khusus, teks yang sengaja
-                dipotong</li>
+              <li>• <code class="px-1 bg-gray-700 rounded">text-clip</code> → Special visual effects, intentionally cut
+                text</li>
             </ul>
           </div>
 
           <!-- Contoh Real World -->
           <div class="mb-6 p-4 rounded-lg bg-purple-500/10 border border-purple-500/30">
-            <h4 class="font-semibold text-purple-400 mb-3">💡 Contoh Real World</h4>
+            <h4 class="font-semibold text-purple-400 mb-3">💡 Real World Examples</h4>
             <div class="grid md:grid-cols-2 gap-4">
               <div class="p-4 rounded-lg bg-gray-800">
-                <p class="text-xs text-gray-400 mb-2">Card Produk dengan truncate:</p>
+                <p class="text-xs text-gray-400 mb-2">Product Card with truncate:</p>
                 <div class="bg-gray-900 rounded-lg p-3">
                   <div class="w-full h-20 bg-gray-700 rounded mb-2"></div>
                   <p class="font-semibold truncate">iPhone 15 Pro Max 256GB Titanium Blue Edition Limited</p>
@@ -878,14 +875,14 @@
                 </div>
               </div>
               <div class="p-4 rounded-lg bg-gray-800">
-                <p class="text-xs text-gray-400 mb-2">Notification dengan truncate:</p>
+                <p class="text-xs text-gray-400 mb-2">Notification with truncate:</p>
                 <div class="bg-gray-900 rounded-lg p-3 space-y-2">
                   <div class="flex items-center gap-2">
                     <div class="w-8 h-8 rounded-full bg-blue-500"></div>
                     <div class="flex-1 min-w-0">
                       <p class="font-medium truncate">John Doe sent you a very long message about the project deadline
                       </p>
-                      <p class="text-xs text-gray-400">2 menit yang lalu</p>
+                      <p class="text-xs text-gray-400">2 minutes ago</p>
                     </div>
                   </div>
                 </div>
@@ -949,8 +946,8 @@
           </div>
 
           <div class="p-4 rounded-lg bg-gray-800">
-            <p class="text-sm text-gray-400 mb-2">Contoh <code class="px-1 bg-gray-700 rounded">break-all</code> untuk
-              URL panjang:</p>
+            <p class="text-sm text-gray-400 mb-2">Example of <code class="px-1 bg-gray-700 rounded">break-all</code> for
+              long URLs:</p>
             <p class="break-all text-blue-400">
               https://example.com/this-is-a-very-long-url-that-would-normally-overflow-the-container</p>
           </div>
@@ -958,14 +955,14 @@
 
         <!-- Common Mistakes -->
         <section class="p-4 rounded-lg bg-red-500/10 border border-red-500/30">
-          <h3 class="font-bold text-red-400 mb-3">⚠️ Kesalahan Umum Pemula</h3>
+          <h3 class="font-bold text-red-400 mb-3">⚠️ Common Beginner Mistakes</h3>
           <ul class="text-gray-300 space-y-2 text-sm">
-            <li>• Tidak menggunakan <code class="px-1 rounded bg-gray-800">leading-relaxed</code> untuk paragraf panjang
+            <li>• Not using <code class="px-1 rounded bg-gray-800">leading-relaxed</code> for long paragraphs
             </li>
-            <li>• Lupa menambahkan font-weight yang didukung di font yang digunakan</li>
-            <li>• Menggunakan <code class="px-1 rounded bg-gray-800">text-justify</code> tanpa <code
+            <li>• Forgetting to add supported font-weights in the font used</li>
+            <li>• Using <code class="px-1 rounded bg-gray-800">text-justify</code> without <code
                 class="px-1 rounded bg-gray-800">hyphens-auto</code></li>
-            <li>• Tidak mempertimbangkan <code class="px-1 rounded bg-gray-800">max-w-prose</code> untuk readability
+            <li>• Not considering <code class="px-1 rounded bg-gray-800">max-w-prose</code> for readability
             </li>
           </ul>
         </section>
@@ -976,14 +973,14 @@
       <div class="my-10 p-6 rounded-xl bg-gray-800/50 border border-gray-700">
         <label class="flex items-center gap-4 cursor-pointer">
           <input type="checkbox" id="reading-checkbox" class="w-5 h-5 rounded">
-          <span class="font-semibold">Saya sudah membaca dan memahami Typography</span>
+          <span class="font-semibold">I have read and understood Typography</span>
         </label>
       </div>
 
       <!-- Challenge -->
       <section class="challenge-section p-6 rounded-xl mb-10">
-        <h2 class="text-xl font-bold mb-4">🎯 Challenge: Halaman Artikel Blog</h2>
-        <p class="text-gray-300 mb-6">Buat halaman artikel blog yang nyaman dibaca. Berikut contoh hasilnya:</p>
+        <h2 class="text-xl font-bold mb-4">🎯 Challenge: Blog Article Page</h2>
+        <p class="text-gray-300 mb-6">Create a blog article page that is comfortable to read. Here is a result example:</p>
 
         <!-- Blog Preview -->
         <div class="mb-8 p-4 rounded-xl bg-gray-950 border border-gray-700">
@@ -992,7 +989,7 @@
           <article class="max-w-prose mx-auto py-6">
             <div class="mb-6">
               <span class="text-xs text-primary-500 uppercase tracking-wider font-medium">Tutorial</span>
-              <h1 class="text-3xl font-bold mt-2 mb-3 leading-tight">Cara Membuat Website yang Responsif dengan Tailwind
+              <h1 class="text-3xl font-bold mt-2 mb-3 leading-tight">How to Create a Responsive Website with Tailwind
                 CSS</h1>
               <div class="flex items-center gap-4 text-sm text-gray-400">
                 <span>12 Jan 2026</span>
@@ -1006,10 +1003,10 @@
               ut labore et dolore magna aliqua.
             </p>
 
-            <h2 class="text-xl font-semibold mt-6 mb-3">Langkah Pertama</h2>
+            <h2 class="text-xl font-semibold mt-6 mb-3">Step One</h2>
             <p class="text-gray-300 leading-relaxed mb-4">
               Ut enim ad minim veniam, quis nostrud <em>exercitation ullamco</em> laboris nisi ut aliquip ex ea commodo
-              consequat.
+              consequence.
             </p>
 
             <blockquote class="border-l-4 border-primary-500 pl-4 my-6 italic text-gray-400">
@@ -1025,7 +1022,7 @@
 
         <!-- Typography Used -->
         <div class="mb-6 p-4 rounded-lg bg-gray-800/50 border border-gray-700">
-          <h3 class="font-semibold mb-3">📝 Typography Classes yang Digunakan:</h3>
+          <h3 class="font-semibold mb-3">📝 Typography Classes Used:</h3>
           <div class="grid md:grid-cols-2 gap-4 text-sm">
             <div>
               <p class="text-gray-400 mb-2">Heading & Title:</p>
@@ -1064,7 +1061,7 @@
 
         <!-- Code Example -->
         <div class="mb-6">
-          <h3 class="font-semibold mb-3">💻 Kode HTML</h3>
+          <h3 class="font-semibold mb-3">💻 HTML Code</h3>
 
           <div class="code-block">
             <div class="code-header">
@@ -1080,7 +1077,7 @@
   
   <span class="comment">&lt;!-- Title --&gt;</span>
   <span class="tag">&lt;h1</span> <span class="attr">class</span>=<span class="string">"text-3xl font-bold mt-2 mb-3 leading-tight"</span><span class="tag">&gt;</span>
-    Judul Artikel Blog Anda
+    Your Blog Article Title
   <span class="tag">&lt;/h1&gt;</span>
   
   <span class="comment">&lt;!-- Meta --&gt;</span>
@@ -1092,7 +1089,7 @@
   
   <span class="comment">&lt;!-- Body --&gt;</span>
   <span class="tag">&lt;p</span> <span class="attr">class</span>=<span class="string">"text-gray-300 leading-relaxed mb-4"</span><span class="tag">&gt;</span>
-    Paragraf pertama artikel...
+    Article first paragraph...
   <span class="tag">&lt;/p&gt;</span>
   
   <span class="comment">&lt;!-- Subheading --&gt;</span>
@@ -1100,7 +1097,7 @@
   
   <span class="comment">&lt;!-- Blockquote --&gt;</span>
   <span class="tag">&lt;blockquote</span> <span class="attr">class</span>=<span class="string">"border-l-4 border-primary-500 pl-4 my-6 italic text-gray-400"</span><span class="tag">&gt;</span>
-    "Quote yang inspiratif..."
+    "Inspirational quote..."
     <span class="tag">&lt;cite</span> <span class="attr">class</span>=<span class="string">"block text-sm mt-2 not-italic"</span><span class="tag">&gt;</span>— Author<span class="tag">&lt;/cite&gt;</span>
   <span class="tag">&lt;/blockquote&gt;</span>
 <span class="tag">&lt;/article&gt;</span></pre>
@@ -1110,21 +1107,21 @@
 
         <!-- Additional Tasks -->
         <div class="mb-6 p-4 rounded-lg bg-yellow-500/10 border border-yellow-500/30">
-          <h3 class="font-semibold text-yellow-400 mb-3">✨ Tantangan Tambahan:</h3>
+          <h3 class="font-semibold text-yellow-400 mb-3">✨ Additional Challenges:</h3>
           <ul class="text-sm text-gray-300 space-y-2">
-            <li>□ Tambahkan <code class="px-1 rounded bg-gray-700">prose</code> class dari @tailwindcss/typography
+            <li>□ Add <code class="px-1 rounded bg-gray-700">prose</code> class from @tailwindcss/typography
               plugin</li>
-            <li>□ Buat responsive font size dengan <code
+            <li>□ Create responsive font size with <code
                 class="px-1 rounded bg-gray-700">text-2xl md:text-3xl lg:text-4xl</code></li>
-            <li>□ Tambahkan <code class="px-1 rounded bg-gray-700">first-letter:text-5xl first-letter:font-bold</code>
-              untuk drop cap</li>
-            <li>□ Style link dengan <code class="px-1 rounded bg-gray-700">hover:underline decoration-2</code></li>
+            <li>□ Add <code class="px-1 rounded bg-gray-700">first-letter:text-5xl first-letter:font-bold</code>
+              for drop cap</li>
+            <li>□ Style links with <code class="px-1 rounded bg-gray-700">hover:underline decoration-2</code></li>
           </ul>
         </div>
 
         <button id="submit-challenge"
           class="w-full py-3 rounded-lg bg-green-500 text-white font-semibold hover:bg-green-600 transition-colors">✅
-          Challenge Selesai</button>
+          Challenge Completed</button>
       </section>
 
       <!-- Navigation -->

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="id" class="dark">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Backgrounds & Effects</title>
+  <title>Backgrounds & Effects | Learn Tailwind CSS</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: { 500: '#667eea', 600: '#5a67d8' } } } } }</script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -44,14 +44,14 @@
 
     <div class="max-w-4xl mx-auto px-6 py-12">
       <div class="mb-10">
-        <span class="px-3 py-1 rounded-full bg-primary-500/20 text-primary-500 text-sm">Materi 7/10</span>
+        <span class="px-3 py-1 rounded-full bg-primary-500/20 text-primary-500 text-sm">Lesson 7/10</span>
         <h1 class="text-4xl font-bold mt-4 mb-3">Backgrounds, Borders, Effects & Filters</h1>
-        <p class="text-lg text-gray-400">Background colors, gradients, borders, shadows, dan efek visual lainnya.</p>
+        <p class="text-lg text-gray-400">Manage background colors, gradients, borders, shadows, and other visual effects.</p>
       </div>
 
       <!-- Daftar Isi -->
       <div class="mb-10 p-4 rounded-xl bg-gray-800/50 border border-gray-700">
-        <h3 class="font-semibold mb-3">📋 Daftar Isi</h3>
+        <h3 class="font-semibold mb-3">📋 Table of Contents</h3>
         <div class="grid md:grid-cols-2 gap-2 text-sm text-gray-300">
           <div>
             <p class="font-semibold text-primary-400 mb-1">Backgrounds</p>
@@ -109,7 +109,7 @@
           </div>
 
           <!-- Color shades -->
-          <h4 class="font-semibold mb-2">Shades (contoh blue)</h4>
+          <h4 class="font-semibold mb-2">Shades (blue example)</h4>
           <div class="flex gap-1 mb-4">
             <div class="flex-1 h-10 rounded bg-blue-50 flex items-center justify-center text-xs text-gray-900">50</div>
             <div class="flex-1 h-10 rounded bg-blue-100 flex items-center justify-center text-xs text-gray-900">100
@@ -140,7 +140,7 @@
           <div class="mt-4 playground">
             <div class="playground-header">
               <div class="playground-title">
-                <span class="icon">🎮</span> Coba Background Color
+                <span class="icon">🎮</span> Try Background Color
               </div>
               <div class="playground-actions">
                 <button class="playground-btn reset-btn">🔄 Reset</button>
@@ -150,7 +150,7 @@
             <div class="playground-body" style="min-height: 150px;">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false" style="min-height: 100px;"><!-- Coba ubah bg-blue-500 menjadi bg-green-600 atau bg-purple-500/50 -->
+                <textarea class="playground-editor" spellcheck="false" style="min-height: 100px;"><!-- Try changing bg-blue-500 to bg-green-600 or bg-purple-500/50 -->
 <div class="bg-blue-500 p-4 rounded-lg text-white text-center">
   Background Blue 500
 </div>
@@ -204,7 +204,7 @@
           </div>
 
           <!-- Gradient Examples -->
-          <h4 class="font-semibold mb-2">Contoh Gradient</h4>
+          <h4 class="font-semibold mb-2">Gradient Examples</h4>
           <div class="grid md:grid-cols-2 gap-3">
             <div
               class="h-20 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-sm">
@@ -414,7 +414,7 @@
               </div>
             </div>
             <div>
-              <h4 class="font-semibold mb-2">Ring (untuk focus states)</h4>
+              <h4 class="font-semibold mb-2">Ring (for focus states)</h4>
               <div class="space-y-3">
                 <div class="p-3 bg-gray-800 rounded ring-2 ring-blue-500 text-center text-sm">ring-2 ring-blue-500</div>
                 <div
@@ -425,8 +425,8 @@
           </div>
 
           <div class="mt-4 p-4 rounded-lg bg-blue-500/10 border border-blue-500/30">
-            <p class="text-blue-300 text-sm">💡 <strong>Tip:</strong> Gunakan <code
-                class="px-1 bg-gray-800 rounded">ring</code> untuk focus states pada button/input karena tidak mengubah
+            <p class="text-blue-300 text-sm">💡 <strong>Tip:</strong> Use <code
+                class="px-1 bg-gray-800 rounded">ring</code> for focus states on buttons/inputs as it does not change the
               layout.</p>
           </div>
         </section>
@@ -618,14 +618,14 @@
 
         <!-- Common Mistakes -->
         <section class="p-4 rounded-lg bg-red-500/10 border border-red-500/30">
-          <h3 class="font-bold text-red-400 mb-3">⚠️ Kesalahan Umum Pemula</h3>
+          <h3 class="font-bold text-red-400 mb-3">⚠️ Common Beginner Mistakes</h3>
           <ul class="text-gray-300 space-y-2 text-sm">
-            <li>• Lupa bahwa shadow tidak terlihat di dark background (gunakan <code
+            <li>• Forgetting that shadows are not visible on a dark background (use <code
                 class="px-1 rounded bg-gray-800">shadow-{color}</code>)</li>
-            <li>• <code class="px-1 rounded bg-gray-800">backdrop-blur</code> butuh background semi-transparan <code
+            <li>• <code class="px-1 rounded bg-gray-800">backdrop-blur</code> needs a semi-transparent background like <code
                 class="px-1 rounded bg-gray-800">bg-white/10</code></li>
-            <li>• Menggunakan terlalu banyak efek sekaligus (keep it simple!)</li>
-            <li>• Tidak menggunakan <code class="px-1 rounded bg-gray-800">overflow-hidden</code> saat rounded dengan
+            <li>• Using too many effects at once (keep it simple!)</li>
+            <li>• Not using <code class="px-1 rounded bg-gray-800">overflow-hidden</code> when using rounded corners with
               child elements</li>
           </ul>
         </section>
@@ -636,15 +636,15 @@
       <div class="my-10 p-6 rounded-xl bg-gray-800/50 border border-gray-700">
         <label class="flex items-center gap-4 cursor-pointer">
           <input type="checkbox" id="reading-checkbox" class="w-5 h-5 rounded">
-          <span class="font-semibold">Saya sudah membaca dan memahami materi ini</span>
+          <span class="font-semibold">I have read and understood this lesson</span>
         </label>
       </div>
 
       <!-- Challenge -->
       <section class="challenge-section p-6 rounded-xl mb-10">
-        <h2 class="text-xl font-bold mb-4">🎯 Challenge: UI Card Modern dengan Efek</h2>
-        <p class="text-gray-300 mb-6">Buat UI card modern dengan gradient, shadow, hover effects, dan border. Berikut
-          contohnya:</p>
+        <h2 class="text-xl font-bold mb-4">🎯 Challenge: Modern UI Card with Effects</h2>
+        <p class="text-gray-300 mb-6">Create a modern UI card with gradients, shadows, hover effects, and borders. Here is an
+          example:</p>
 
         <!-- Card Preview -->
         <div class="mb-8 p-6 rounded-xl bg-gray-950 border border-gray-700">
@@ -658,7 +658,7 @@
               <div class="relative">
                 <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-2xl mb-4">🚀</div>
                 <h3 class="font-bold text-lg mb-2">Gradient Card</h3>
-                <p class="text-sm text-white/80">Dengan hover scale & shadow effect</p>
+                <p class="text-sm text-white/80">With hover scale & shadow effect</p>
               </div>
             </div>
 
@@ -669,7 +669,7 @@
                 class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-2xl mb-4">
                 💎</div>
               <h3 class="font-bold text-lg mb-2">Glass Card</h3>
-              <p class="text-sm text-gray-400">Glassmorphism dengan backdrop-blur</p>
+              <p class="text-sm text-gray-400">Glassmorphism with backdrop-blur</p>
             </div>
 
             <!-- Card 3: Bordered -->
@@ -684,7 +684,7 @@
 
         <!-- Classes Used -->
         <div class="mb-6 p-4 rounded-lg bg-gray-800/50 border border-gray-700">
-          <h3 class="font-semibold mb-3">📝 Classes yang Digunakan:</h3>
+          <h3 class="font-semibold mb-3">📝 Classes Used:</h3>
           <div class="grid md:grid-cols-2 gap-4 text-sm">
             <div>
               <p class="text-gray-400 mb-2">Background & Gradient:</p>
@@ -723,7 +723,7 @@
 
         <!-- Code Example -->
         <div class="mb-6">
-          <h3 class="font-semibold mb-3">💻 Kode Card</h3>
+          <h3 class="font-semibold mb-3">💻 Card Code</h3>
           <div class="code-block">
             <div class="code-header">
               <span class="filename"><span class="dot html"></span> modern-cards.html</span>
@@ -757,22 +757,22 @@
 
         <!-- Additional Tasks -->
         <div class="mb-6 p-4 rounded-lg bg-yellow-500/10 border border-yellow-500/30">
-          <h3 class="font-semibold text-yellow-400 mb-3">✨ Tantangan Tambahan:</h3>
+          <h3 class="font-semibold text-yellow-400 mb-3">✨ Additional Challenges:</h3>
           <ul class="text-sm text-gray-300 space-y-2">
-            <li>□ Tambahkan <code class="px-1 rounded bg-gray-700">group-hover:</code> untuk animate child elements</li>
-            <li>□ Buat card dengan <code class="px-1 rounded bg-gray-700">ring</code> effect saat focus</li>
-            <li>□ Coba gradient 3 warna dengan <code class="px-1 rounded bg-gray-700">via-{color}</code></li>
-            <li>□ Buat card dengan <code class="px-1 rounded bg-gray-700">rotate-3 hover:rotate-0</code> effect</li>
+            <li>□ Add <code class="px-1 rounded bg-gray-700">group-hover:</code> to animate child elements</li>
+            <li>□ Create a card with <code class="px-1 rounded bg-gray-700">ring</code> effect when focused</li>
+            <li>□ Try a colors gradient with <code class="px-1 rounded bg-gray-700">via-{color}</code></li>
+            <li>□ Create a card with <code class="px-1 rounded bg-gray-700">rotate-3 hover:rotate-0</code> effect</li>
           </ul>
         </div>
 
         <!-- Interactive Playground -->
         <div class="mb-6">
           <h3 class="font-semibold mb-3 flex items-center gap-2">
-            🎮 Coba Langsung
+            🎮 Try it Direct
             <span class="playground-badge">Live</span>
           </h3>
-          <p class="text-sm text-gray-400 mb-4">Coba modifikasi gradient, shadow, dan efek lainnya!</p>
+          <p class="text-sm text-gray-400 mb-4">Try modifying gradients, shadows, and other effects!</p>
 
           <div class="playground">
             <div class="playground-header">
@@ -788,21 +788,21 @@
             <div class="playground-body">
               <div class="playground-editor-container">
                 <div class="playground-section-header">HTML</div>
-                <textarea class="playground-editor" spellcheck="false"><!-- Coba ubah from-purple-500 to-pink-500 menjadi warna lain -->
+                <textarea class="playground-editor" spellcheck="false"><!-- Try changing from-purple-500 to-pink-500 to other colors -->
 <div class="p-6 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 
      text-white text-center mb-4">
   <h3 class="text-lg font-bold">Gradient Card</h3>
   <p class="text-sm opacity-80">from-purple-500 to-pink-500</p>
 </div>
 
-<!-- Coba ubah shadow-lg menjadi shadow-xl atau shadow-2xl -->
+<!-- Try changing shadow-lg to shadow-xl or shadow-2xl -->
 <div class="p-6 rounded-2xl bg-gray-800 shadow-lg shadow-blue-500/50 
      text-center mb-4">
   <h3 class="text-lg font-bold">Colored Shadow</h3>
   <p class="text-sm text-gray-400">shadow-blue-500/50</p>
 </div>
 
-<!-- Glass effect - coba ubah backdrop-blur-sm -->
+<!-- Glass effect - try changing backdrop-blur-sm -->
 <div class="p-6 rounded-2xl bg-white/10 backdrop-blur-sm 
      border border-white/20 text-center">
   <h3 class="text-lg font-bold">Glassmorphism</h3>
@@ -819,7 +819,7 @@
 
         <button id="submit-challenge"
           class="w-full py-3 rounded-lg bg-green-500 text-white font-semibold hover:bg-green-600 transition-colors">✅
-          Challenge Selesai</button>
+          Challenge Completed</button>
       </section>
 
       <!-- Navigation -->
