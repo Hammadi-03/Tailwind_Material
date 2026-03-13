@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Step 3: Hero Section - Tutorial E-Commerce</title>
+    <title>Step 3: Hero Section - E-Commerce Tutorial</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
             </a>
             <nav>
                 <div class="nav-section">
-                    <div class="nav-section-title">Pendahuluan</div>
+                    <div class="nav-section-title">Introduction</div>
                     <ul class="nav-links">
                         <li><a href="index.html"><span class="step-number">🏠</span> Overview</a></li>
                     </ul>
@@ -27,10 +27,10 @@
                     <div class="nav-section-title">Step by Step</div>
                     <ul class="nav-links">
                         <li><a href="step-1-setup.html"><span class="step-number">1</span> Setup Project</a></li>
-                        <li><a href="step-2-navbar.html"><span class="step-number">2</span> Membuat Navbar</a></li>
+                        <li><a href="step-2-navbar.html"><span class="step-number">2</span> Creating Navbar</a></li>
                         <li><a href="step-3-hero.html" class="active"><span class="step-number">3</span> Hero Section</a></li>
                         <li><a href="step-4-products.html"><span class="step-number">4</span> Product Cards</a></li>
-                        <li><a href="step-5-sections.html"><span class="step-number">5</span> Section Lainnya</a></li>
+                        <li><a href="step-5-sections.html"><span class="step-number">5</span> Other Sections</a></li>
                         <li><a href="step-6-footer.html"><span class="step-number">6</span> Footer</a></li>
                     </ul>
                 </div>
@@ -42,8 +42,8 @@
             <p>Hero section adalah area banner utama yang pertama dilihat pengunjung. Ini adalah kesempatan untuk membuat first impression yang kuat!</p>
 
             <!-- Section 1 -->
-            <h2>3.1 Struktur Hero Section</h2>
-            <p>Hero section menggunakan grid 2 kolom: konten teks di kiri, gambar di kanan.</p>
+            <h2>3.1 Hero Section Structure</h2>
+            <p>The hero section uses a 2-column grid: text content on the left, an image on the right.</p>
 
             <div class="code-block">
                 <div class="code-header">
@@ -55,31 +55,31 @@
     <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"</span><span class="tag">&gt;</span>
         <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"grid lg:grid-cols-2 gap-8 lg:gap-12 items-center"</span><span class="tag">&gt;</span>
             
-            <span class="comment">&lt;!-- Hero Content (Kiri) --&gt;</span>
+            <span class="comment">&lt;!-- Hero Content (Left) --&gt;</span>
             <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"text-center lg:text-left animate-fade-in-up"</span><span class="tag">&gt;</span>
                 <span class="comment">&lt;!-- Badge --&gt;</span>
                 <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4"</span><span class="tag">&gt;</span>
-                    ✨ Koleksi Terbaru 2025
+                    ✨ New Collection 2025
                 <span class="tag">&lt;/span&gt;</span>
                 
                 <span class="comment">&lt;!-- Heading --&gt;</span>
                 <span class="tag">&lt;h1</span> <span class="attr">class</span>=<span class="string">"font-playfair text-3xl lg:text-4xl xl:text-5xl font-bold text-custom-text mb-4 leading-tight"</span><span class="tag">&gt;</span>
-                    Tampil Anggun dengan <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"text-primary"</span><span class="tag">&gt;</span>Busana Muslim<span class="tag">&lt;/span&gt;</span> Berkelas
+                    Look Elegant with <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"text-primary"</span><span class="tag">&gt;</span>Muslim Fashion<span class="tag">&lt;/span&gt;</span> Class
                 <span class="tag">&lt;/h1&gt;</span>
                 
                 <span class="comment">&lt;!-- Description --&gt;</span>
                 <span class="tag">&lt;p</span> <span class="attr">class</span>=<span class="string">"text-text-light text-base mb-6 max-w-lg mx-auto lg:mx-0"</span><span class="tag">&gt;</span>
-                    Temukan koleksi busana muslim terlengkap dengan desain modern dan bahan berkualitas.
+                    Find the most complete collection of Muslim fashion with modern designs and quality materials.
                 <span class="tag">&lt;/p&gt;</span>
                 
                 <span class="comment">&lt;!-- CTA Buttons --&gt;</span>
                 <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"</span><span class="tag">&gt;</span>
-                    <span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="string">"products.html"</span> <span class="attr">class</span>=<span class="string">"btn-primary text-center"</span><span class="tag">&gt;</span>Lihat Koleksi<span class="tag">&lt;/a&gt;</span>
-                    <span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="string">"about.html"</span> <span class="attr">class</span>=<span class="string">"btn-secondary text-center"</span><span class="tag">&gt;</span>Tentang Kami<span class="tag">&lt;/a&gt;</span>
+                    <span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="string">"products.html"</span> <span class="attr">class</span>=<span class="string">"btn-primary text-center"</span><span class="tag">&gt;</span>See Collection<span class="tag">&lt;/a&gt;</span>
+                    <span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="string">"about.html"</span> <span class="attr">class</span>=<span class="string">"btn-secondary text-center"</span><span class="tag">&gt;</span>About Us<span class="tag">&lt;/a&gt;</span>
                 <span class="tag">&lt;/div&gt;</span>
             <span class="tag">&lt;/div&gt;</span>
 
-            <span class="comment">&lt;!-- Hero Image (Kanan) --&gt;</span>
+            <span class="comment">&lt;!-- Hero Image (Right) --&gt;</span>
             <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"relative animate-fade-in delay-200"</span><span class="tag">&gt;</span>
                 <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"aspect-[4/5] max-h-[450px] rounded-2xl overflow-hidden shadow-xl img-placeholder placeholder-olive"</span><span class="tag">&gt;</span>
                 <span class="tag">&lt;/div&gt;</span>
@@ -92,15 +92,15 @@
                         <span class="tag">&lt;/div&gt;</span>
                         <span class="tag">&lt;div&gt;</span>
                             <span class="tag">&lt;p</span> <span class="attr">class</span>=<span class="string">"font-bold text-custom-text"</span><span class="tag">&gt;</span>1000+<span class="tag">&lt;/p&gt;</span>
-                            <span class="tag">&lt;p</span> <span class="attr">class</span>=<span class="string">"text-sm text-text-light"</span><span class="tag">&gt;</span>Review Positif<span class="tag">&lt;/p&gt;</span>
+                            <span class="tag">&lt;p</span> <span class="attr">class</span>=<span class="string">"text-sm text-text-light"</span><span class="tag">&gt;</span>Positive Reviews<span class="tag">&lt;/p&gt;</span>
                         <span class="tag">&lt;/div&gt;</span>
                     <span class="tag">&lt;/div&gt;</span>
                 <span class="tag">&lt;/div&gt;</span>
                 
-                <span class="comment">&lt;!-- Floating Badge: Gratis Ongkir --&gt;</span>
+                <span class="comment">&lt;!-- Floating Badge: Free Shipping --&gt;</span>
                 <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"absolute -top-4 -right-4 bg-primary text-white p-3 rounded-2xl shadow-lg hidden sm:block"</span><span class="tag">&gt;</span>
-                    <span class="tag">&lt;p</span> <span class="attr">class</span>=<span class="string">"font-bold"</span><span class="tag">&gt;</span>GRATIS<span class="tag">&lt;/p&gt;</span>
-                    <span class="tag">&lt;p</span> <span class="attr">class</span>=<span class="string">"text-sm opacity-90"</span><span class="tag">&gt;</span>Ongkir*<span class="tag">&lt;/p&gt;</span>
+                    <span class="tag">&lt;p</span> <span class="attr">class</span>=<span class="string">"font-bold"</span><span class="tag">&gt;</span>FREE<span class="tag">&lt;/p&gt;</span>
+                    <span class="tag">&lt;p</span> <span class="attr">class</span>=<span class="string">"text-sm opacity-90"</span><span class="tag">&gt;</span>Shipping*<span class="tag">&lt;/p&gt;</span>
                 <span class="tag">&lt;/div&gt;</span>
             <span class="tag">&lt;/div&gt;</span>
         <span class="tag">&lt;/div&gt;</span>
@@ -109,16 +109,16 @@
             </div>
 
             <!-- Section 2 -->
-            <h2>3.2 Penjelasan Class Penting</h2>
+            <h2>3.2 Key Class Explanations</h2>
 
             <h3>📐 Grid Layout</h3>
             <div class="table-wrapper">
                 <table>
-                    <thead><tr><th>Class</th><th>Fungsi</th></tr></thead>
+                    <thead><tr><th>Class</th><th>Function</th></tr></thead>
                     <tbody>
-                        <tr><td><code>grid</code></td><td>Mengaktifkan CSS Grid</td></tr>
-                        <tr><td><code>lg:grid-cols-2</code></td><td>2 kolom di layar besar (≥1024px)</td></tr>
-                        <tr><td><code>gap-8 lg:gap-12</code></td><td>Gap antara kolom (2rem → 3rem)</td></tr>
+                        <tr><td><code>grid</code></td><td>Enable CSS Grid</td></tr>
+                        <tr><td><code>lg:grid-cols-2</code></td><td>2 columns on large screens (≥1024px)</td></tr>
+                        <tr><td><code>gap-8 lg:gap-12</code></td><td>Gap between columns (2rem → 3rem)</td></tr>
                         <tr><td><code>items-center</code></td><td>Vertical alignment center</td></tr>
                     </tbody>
                 </table>
@@ -127,12 +127,12 @@
             <h3>📏 Sizing & Spacing</h3>
             <div class="table-wrapper">
                 <table>
-                    <thead><tr><th>Class</th><th>Fungsi</th></tr></thead>
+                    <thead><tr><th>Class</th><th>Function</th></tr></thead>
                     <tbody>
-                        <tr><td><code>pt-20 lg:pt-24</code></td><td>Padding top untuk navbar fixed (5rem → 6rem)</td></tr>
+                        <tr><td><code>pt-20 lg:pt-24</code></td><td>Padding top for fixed navbar (5rem → 6rem)</td></tr>
                         <tr><td><code>aspect-[4/5]</code></td><td>Custom aspect ratio 4:5 (portrait)</td></tr>
                         <tr><td><code>max-h-[450px]</code></td><td>Maximum height 450px</td></tr>
-                        <tr><td><code>max-w-lg</code></td><td>Max-width untuk paragraf agar mudah dibaca</td></tr>
+                        <tr><td><code>max-w-lg</code></td><td>Max-width for paragraphs to ensure readability</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -140,13 +140,13 @@
             <h3>🎨 Styling Classes</h3>
             <div class="table-wrapper">
                 <table>
-                    <thead><tr><th>Class</th><th>Fungsi</th></tr></thead>
+                    <thead><tr><th>Class</th><th>Function</th></tr></thead>
                     <tbody>
-                        <tr><td><code>bg-primary/10</code></td><td>Background primary dengan opacity 10%</td></tr>
-                        <tr><td><code>rounded-full</code></td><td>Border radius pill (badge)</td></tr>
-                        <tr><td><code>rounded-2xl</code></td><td>Border radius 1rem</td></tr>
-                        <tr><td><code>shadow-xl</code></td><td>Box shadow extra large</td></tr>
-                        <tr><td><code>leading-tight</code></td><td>Line-height 1.25 (untuk heading)</td></tr>
+                        <tr><td><code>bg-primary/10</code></td><td>Primary background with 10% opacity</td></tr>
+                        <tr><td><code>rounded-full</code></td><td>Pill-shaped border radius (badge)</td></tr>
+                        <tr><td><code>rounded-2xl</code></td><td>1rem border radius</td></tr>
+                        <tr><td><code>shadow-xl</code></td><td>Extra large box shadow</td></tr>
+                        <tr><td><code>leading-tight</code></td><td>Line-height 1.25 (for headings)</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -154,19 +154,19 @@
             <h3>🎯 Positioning Floating Elements</h3>
             <div class="table-wrapper">
                 <table>
-                    <thead><tr><th>Class</th><th>Fungsi</th></tr></thead>
+                    <thead><tr><th>Class</th><th>Function</th></tr></thead>
                     <tbody>
-                        <tr><td><code>relative</code></td><td>Parent container untuk absolute children</td></tr>
-                        <tr><td><code>absolute</code></td><td>Position absolute untuk badge</td></tr>
-                        <tr><td><code>-bottom-4 -left-4</code></td><td>Posisi negatif (keluar dari container)</td></tr>
-                        <tr><td><code>-top-4 -right-4</code></td><td>Posisi negatif di pojok kanan atas</td></tr>
+                        <tr><td><code>relative</code></td><td>Parent container for absolute children</td></tr>
+                        <tr><td><code>absolute</code></td><td>Absolute position for badge</td></tr>
+                        <tr><td><code>-bottom-4 -left-4</code></td><td>Negative position (outside of container)</td></tr>
+                        <tr><td><code>-bottom-4 -left-4</code></td><td>Negative position in top right corner</td></tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="info-box tip">
                 <div class="info-box-title">💡 Pro Tip: Negative Positioning</div>
-                <p>Class seperti <code>-bottom-4</code> menggunakan nilai negatif untuk membuat elemen "keluar" dari parent container, menciptakan efek floating yang menarik!</p>
+                <p>Classes like <code>-bottom-4</code> use negative values to make elements "pop out" from the parent container, creating an attractive floating effect!</p>
             </div>
 
             <!-- Section 3 -->
@@ -203,7 +203,7 @@
     box-shadow: 0 4px 12px rgba(92, 110, 78, 0.3);
 }
 
-<span class="comment">/* Button Secondary (Outline) */</span>
+<span class="comment">/* Secondary Button (Outline) */</span>
 <span class="property">.btn-secondary</span> {
     background: transparent;
     color: var(--color-primary);
@@ -244,10 +244,10 @@
                 <table>
                     <thead><tr><th>Screen</th><th>Behavior</th></tr></thead>
                     <tbody>
-                        <tr><td>Mobile (default)</td><td>1 kolom, text center, buttons stack vertical</td></tr>
-                        <tr><td>Tablet (sm)</td><td>Floating badges muncul, buttons side-by-side</td></tr>
-                        <tr><td>Desktop (lg)</td><td>2 kolom, text left-aligned</td></tr>
-                        <tr><td>Large (xl)</td><td>Font size lebih besar</td></tr>
+                        <tr><td>Mobile (default)</td><td>1 column, centered text, buttons stack vertically</td></tr>
+                        <tr><td>Tablet (sm)</td><td>Floating badges appear, buttons side-by-side</td></tr>
+                        <tr><td>Desktop (lg)</td><td>2 columns, text left-aligned</td></tr>
+                        <tr><td>Large (xl)</td><td>Larger font size</td></tr>
                     </tbody>
                 </table>
             </div>
